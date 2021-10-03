@@ -1,0 +1,113 @@
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt,article]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{titling} \posttitle{\par\end{center}} \setlength{\droptitle}{-30pt} \usepackage{multicol} \setlength{\columnsep}{1cm} \usepackage[T1]{fontenc} \usepackage[utf8]{inputenc} \renewcommand{\contentsname}{Table of Contents / Agenda} \usepackage[letterpaper,left=1in,right=1in,top=0.7in,bottom=1in,headheight=23pt,includehead,includefoot,heightrounded]{geometry} \usepackage{fancyhdr} \pagestyle{fancy} \fancyhf{} \cfoot{\thepage} \usepackage{mathpazo} \usepackage[scaled=0.85]{helvet} \usepackage{courier} \usepackage[onehalfspacing]{setspace} \usepackage[framemethod=default]{mdframed} \usepackage{wrapfig} \usepackage{booktabs} \usepackage[outputdir=Lectures]{minted}
+\setcounter{secnumdepth}{3}
+\date{\vspace{-6ex}}
+\title{Class 3: One Health, BioStatistics II: Statistical Regression Modeling}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Class 3: One Health, BioStatistics II: Statistical Regression Modeling},
+ pdfkeywords={},
+ pdfsubject={Description School specific teaching materials},
+ pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\section{Regression Modeling Intro}
+\label{sec:org7cfd461}
+\subsection{Objectives \& Agenda}
+\label{RegModelsAgenda}
+\subsection{Regression Models}
+\label{Lectures/Coursera/Regression Models}
+\subsubsection{Overview}
+\label{sec:org682962b}
+\begin{itemize}
+\item Workhorse of data science.
+
+\item Interpretable model fits, contrasting with ML algorithms.
+
+\item Simplicity, parsimony and intrepretability.
+
+\item First tool of choice for any practical problem.
+\end{itemize}
+
+Regression models are the workhorse of data science. They are the most well described, practical and theoretically understood models in statistics. A data scientist well versed in regression models will be able to solve an incredible array of problems.
+
+Perhaps the key insight for regression models is that they produce highly interpretable model fits. This is unlike machine learning algorithms, which often sacrifice interpretability for improved prediction performance or automation. These are, of course, valuable attributes in their own rights. However, the benefit of simplicity, parsimony and intrepretability offered by regression models (and their close generalizations) should make them a first tool of choice for any practical problem.
+\subsubsection{Historical}
+\label{sec:org5734a5e}
+\begin{itemize}
+\item The earliest form of regression was the method of least squares, published by Legendre in 1805, and by Gauss in 1809.
+\begin{itemize}
+\item Problem of determining, from astronomical observations, the orbits of bodies about the Sun.
+\end{itemize}
+\end{itemize}
+\subsubsection{Regression to the Mean}
+\label{sec:orgdc84e03}
+\begin{itemize}
+\item Dicovered by \href{https://en.wikipedia.org/wiki/Francis\_Galton}{Francis Galton (1886)}
+\begin{itemize}
+\item “Co-relation or correlation of structure” is a phrase much used in biology, and not least in that branch of it which refers to heredity, and the idea is even more frequently present than the phrase; but I am not aware of any previous attempt to define it clearly, to trace its mode of action in detail, or to show how to measure its degree.(Galton, 1888, p 135)
+\end{itemize}
+\end{itemize}
+\subsubsection{Statistical Effect}
+\label{sec:org5723815}
+What is that?.
+\begin{itemize}
+\item In statistics, regression toward the mean (or regression to the mean) arises if a sample point of a random variable is extreme (nearly an outlier), a future point will be closer to the mean or average on further measurements.
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../../../../../../../org/Projects/Lecturing/Coursepack/Courses/Statistics/2021 2do Semester/Lectures/img/galton-means.png}
+\end{center}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{../../../../../../../../../../../../../org/Projects/Lecturing/Coursepack/Courses/Statistics/2021 2do Semester/Lectures/img/galton-means.png}
+\caption{\label{fig:multivariate}Linear Regression}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{../../../../../../../../../../../../../org/Projects/Lecturing/Coursepack/Courses/Statistics/2021 2do Semester/Lectures/img/galton-scatter.png}
+\caption{\label{fig:multivariate}Linear Regression}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{../../../../../../../../../../../../../org/Projects/Lecturing/Coursepack/Courses/Statistics/2021 2do Semester/Lectures/img/galton-bubble.png}
+\caption{\label{fig:multivariate}Linear Regression}
+\end{figure}
+
+\subsubsection{For a pair of random variables \(X,Y\)}
+\label{sec:org86948d8}
+\begin{itemize}
+\item The largest the first one, by chance; the probability of smaller for the second is high.
+
+\item \(P(Y > x|X=x)\) get bigger as \(x\) heads to very small values.
+\end{itemize}
+
+\subsubsection{Conversely}
+\label{sec:org2926e9c}
+\begin{itemize}
+\item \(P(Y < x|X=x)\) get bigger as \(x\) heads to very large values
+\end{itemize}
+\section{Linear Regression Modeling}
+\label{sec:orgcc97bdb}
+\subsection{Objectives \& Agenda}
+\label{RegModelsAgenda}
+\end{document}

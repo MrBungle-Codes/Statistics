@@ -1,0 +1,1493 @@
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt,article]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{titling} \posttitle{\par\end{center}} \setlength{\droptitle}{-30pt} \usepackage{multicol} \setlength{\columnsep}{1cm} \usepackage[T1]{fontenc} \usepackage[utf8]{inputenc} \renewcommand{\contentsname}{Table of Contents / Agenda} \usepackage[letterpaper,left=1in,right=1in,top=0.7in,bottom=1in,headheight=23pt,includehead,includefoot,heightrounded]{geometry} \usepackage{fancyhdr} \pagestyle{fancy} \fancyhf{} \cfoot{\thepage} \usepackage{mathpazo} \usepackage[scaled=0.85]{helvet} \usepackage{courier} \usepackage[onehalfspacing]{setspace} \usepackage[framemethod=default]{mdframed} \usepackage{wrapfig} \usepackage{booktabs} \usepackage[outputdir=Lectures]{minted}
+\setcounter{secnumdepth}{3}
+\date{\vspace{-6ex}}
+\title{Class 2: One Health, BioStatistics I: The Power and Crisis}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Class 2: One Health, BioStatistics I: The Power and Crisis},
+ pdfkeywords={},
+ pdfsubject={Description School specific teaching materials},
+ pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\section{The Crisis}
+\label{sec:org1fd762d}
+\subsection{The Crisis}
+\label{Crisis}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/reproducibility-crisis.jpg}
+\end{center}
+
+\subsection{Objectives \& Agenda}
+\label{ObjAgendaCrisis}
+\begin{itemize}
+\item Critical Thinking \& Objectivity
+\item Bias in Knowledge \& Believes
+\item Customs \& Best Practice
+\item Societal Pressures
+\end{itemize}
+
+\subsection{Where we are}
+\label{sec:org5678182}
+\subsubsection{Ask yourself}
+\label{sec:orgb0a3c4f}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online1.png}
+\end{center}
+\begin{itemize}
+\item 90\% Recognize a \textbf{Crisis on REPRODUCIBILITY}
+\end{itemize}
+
+\subsubsection{Trust you field?}
+\label{sec:orgd8e0718}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online2.jpg}
+\end{center}
+\begin{itemize}
+\item Quantification makes a difference?.
+\item Physicist \& chemists more confident
+\end{itemize}
+
+\subsubsection{Have you?}
+\label{sec:org5b526e8}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online3.jpg}
+\end{center}
+\begin{itemize}
+\item Fail to reproduce results:
+\begin{itemize}
+\item Someone else 60-80\%
+\item My own 40-60\%
+\end{itemize}
+\item Publishing difficulty
+\begin{itemize}
+\item of failing reproduction 13\%
+\item vs successful reproduction 24\%
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Why?}
+\label{sec:orga67571e}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online4.jpg}
+\end{center}
+\begin{itemize}
+\item \textasciitilde{}70\% fraud
+\item >80\% poor design
+\item Selective reporting \& pressure \textasciitilde{}90\%
+\end{itemize}
+
+\subsubsection{What to Change?}
+\label{sec:org3c1bb62}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online5.jpg}
+\end{center}
+\begin{itemize}
+\item \textasciitilde{}90\% Better Statistical undersanding
+\item Robust design
+\item Mentoring
+\item Better practices
+\end{itemize}
+\subsubsection{Did you?}
+\label{sec:orgc4ebec8}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online6.jpg}
+\end{center}
+\begin{itemize}
+\item 34\% did take actions
+\item 33\% last 5 yrs
+\item 7\% more than 5 yrs
+\item 26\% From the beginning
+\end{itemize}
+
+\subsection{Replication Studies}
+\label{sec:org5f53bad}
+\begin{itemize}
+\item \textbf{Replicability crisis} is a serious issue in which many scientific studies are difficult to reproduce or replicate.
+\end{itemize}
+\begin{itemize}
+\item \textbf{Cancer research, only about 10–25\%} of published studies could be validated or reproduced.
+\item In \textbf{psychology only about 36\%} were reproduced.
+\end{itemize}
+\begin{itemize}
+\item Other
+\begin{itemize}
+\item Medicine.
+\item Genetics.
+\item Economics.
+\item \textbf{Neuroscience}.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Reasons}
+\label{sec:org8d7dc0f}
+\begin{itemize}
+\item Inappropriate practices of science,
+\begin{itemize}
+\item HARKing (Hypothesizing After the Results are Known)
+\item p-hacking.
+\item Selective reporting of positive results.
+\item Poor research design.
+\item Lack of raw data.
+\end{itemize}
+\end{itemize}
+
+\subsection{Pharma}
+\label{sec:org7a0d3f3}
+\subsubsection{Bayer}
+\label{sec:org1969961}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/BayerRep.png}
+\end{center}
+\begin{itemize}
+\item Oncology, woman health, cardiovascular.
+\item 65 \% where not reproducible.
+\end{itemize}
+\subsubsection{Amgen}
+\label{sec:org666f12e}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/AmgenPharma.png}
+\end{center}
+\begin{itemize}
+\item Oncology and hematology
+\item From 53 works, only 6 (11\%) where confirmed.
+\end{itemize}
+\subsection{Give me the Power}
+\label{sec:org1737cd7}
+\subsubsection{Power Failure}
+\label{sec:org257bdef}
+\begin{itemize}
+\item Median statistical power is 18-21\%
+\item Neuroimaging studies 8\%.
+\item Animal models 18-31\%.
+\end{itemize}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/NeuroPowerDist.png}
+\end{center}
+\subsubsection{Sample Size}
+\label{sec:orgade3876}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/NeuroPowerTable.png}
+\end{center}
+\subsubsection{Power Effects}
+\label{sec:org03e9523}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/NeuroPower.png}
+\end{center}
+\begin{itemize}
+\item \textbf{Low Power}
+\begin{itemize}
+\item Discovering effects that are genuinely true is low.
+\item Produce more false negatives than high-powered studies.
+\end{itemize}
+\item \textbf{Low PPV}
+\begin{itemize}
+\item Positive Predictable Value
+\item PPV = ([1 – β] × R) ⁄ ([1− β] × R + α)
+\end{itemize}
+\item \textbf{Effect inflation}
+\begin{itemize}
+\item Effect inflation \textbf{occur} whenever claims of \textbf{discovery} are based \textbf{on thresholds} of \textbf{statistical significance}
+\begin{itemize}
+\item for example, p < 0.05, or other selection filters.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Low power and other biases}
+\label{sec:org5454bb5}
+\begin{itemize}
+\item \textbf{Low-powered} studies are \textbf{more likely} to provide a \textbf{wide range of estimates} of the magnitude of an \textbf{effect}.
+\item \textbf{Publication bias}, \textbf{selective data analysis and selective reporting} are \textbf{more likely to affect low-powered studies}.
+\item \textbf{Small studies} may be of \textbf{lower quality in other aspects of their design as well}.
+\end{itemize}
+\subsubsection{More Power}
+\label{sec:org377f962}
+The probability that a research \textbf{finding} is indeed true \textbf{depends on:}
+\begin{itemize}
+\item the \textbf{prior probability} of it being true (before doing the study),
+\item the \textbf{statistical power} of the study,
+\item and the \textbf{level of statistical significance}.
+\end{itemize}
+
+\subsubsection{PPV}
+\label{sec:org21fd0eb}
+\begin{itemize}
+\item After a research finding has been claimed based on achieving formal statistical significance, the \textbf{post-study probability that it is true} is the \textbf{positive predictive value}, PPV.
+\end{itemize}
+
+\subsubsection{Graphical Assessment}
+\label{sec:org1ae6ff2}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/PowerGraph.png}
+\end{center}
+
+\subsubsection{Power \& Bias}
+\label{sec:org75bcdba}
+\begin{center}
+\begin{tabular}{llll}
+\hline
+Finding & True Relationship &  & \\
+\hline
+ & Yes & No & Total\\
+Yes & $$c(1-\beta)R/(R+1)$$ & $$c\alpha/(R+1)$$ & $$c(R+\alpha-\beta R)/(R+1)$$\\
+No & $$c\beta R/(R+1)$$ & $$c(1-\alpha)/(R+1)$$ & $$c(1-\alpha+\beta R)/(R+1)$$\\
+Total & $$cR/(R+1)$$ & $$c/(R+1)$$ & $$c$$\\
+ &  &  & \\
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item (c=relationships are being probed in the field)
+\end{itemize}
+
+\subsubsection{Bias}
+\label{sec:orgf3d42d6}
+A combination of various factors that tend to produce research findings when they should not be produced including:
+\begin{itemize}
+\item Design
+\item Data
+\item Analysis
+\item Presentation factors
+\end{itemize}
+\subsubsection{Corollaries}
+\label{sec:orgcae7502}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/PPV.png}
+\end{center}
+\begin{enumerate}
+\item The \textbf{smaller the studies} conducted in a scientific field, the \textbf{less likely} the research \textbf{findings are to be true}.
+\item The \textbf{smaller the effect sizes} in a scientific field, the \textbf{less likely} the research \textbf{findings are to be true}.
+\item The \textbf{greater the number and the lesser the selection of tested relationships} in a scientific field, the \textbf{less likely} the research \textbf{findings are to be true}.
+\item The \textbf{greater the flexibility in designs}, definitions, outcomes, and analytical modes in a scientific field, the \textbf{less likely} the research \textbf{findings are to be true}.
+\item The \textbf{greater the financial and other interests} and prejudices in a scientific field, the \textbf{less likely} the research \textbf{findings are to be true}.
+\item The \textbf{hotter a scientific field} (with more scientific teams involved), the \textbf{less likely} the research \textbf{findings are to be true}.
+\end{enumerate}
+
+\subsubsection{Some Estimates}
+\label{sec:orgf328532}
+\begin{center}
+\begin{tabular}{rrrlr}
+\(1-\beta\) & R & Bias, u & Example & PPV\\
+\hline
+0.80 & 1:1 & 0.10 & Powered RCT with little bias a 1:1 pre-study odds & 0.85\\
+0.95 & 2:1 & 0.30 & Confirmatory meta-analysis of good quality RCTs & 0.85\\
+0.80 & 1:10 & 0.30 & Adequately powered exploratory epidemiological study & 0.20\\
+0.20 & 1:1000 & 0.80 & Discovery oriented exploratory research with massive testing limited bias & 0.0015\\
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item Randomized control Trial
+\end{itemize}
+\subsection{Erroneous Interactions}
+\label{sec:orgffd53df}
+\subsubsection{Even Best Families Top-ranking journals}
+\label{sec:orgd9c1826}
+\begin{itemize}
+\item Behavioural, Systems Neuroscience.
+\begin{itemize}
+\item \textasciitilde{}50\% correct comparison procedures for two experimental effects.
+\item 2/3 of erroneous cases it may have had serious consequences.
+\end{itemize}
+\end{itemize}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/ErrInteractions1.png}
+\end{center}
+\begin{itemize}
+\item Cellular and molecular neuroscience.
+\begin{itemize}
+\item From 120 additional articles in, none uses correct statistical procedure to compare effect sizes.
+\item 25 used incorrect procedures to compared significance levels.
+\end{itemize}
+\end{itemize}
+\subsubsection{Comparison Errors}
+\label{sec:orgc68811e}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/ErrInteractions2.png}
+\end{center}
+\begin{itemize}
+\item Tree situation where effect size comparison are incorrectly made.
+\end{itemize}
+\subsection{DATA sets}
+\label{sec:orgea4766e}
+\subsubsection{Raw Data Withdraw}
+\label{sec:orge55d7b6}
+\begin{center}
+\includegraphics[width=.9\linewidth]{../../../../Units/Statistics/img/SciSci/RawDataRequest.png}
+\end{center}
+\subsubsection{Absence of Raw Data means absence of science}
+\label{sec:org831e189}
+\subsubsection{Open Science Open Data}
+\label{sec:orgd2fd74d}
+\section{Recalling the Power}
+\label{sec:orge9ec17b}
+\subsection{Objectives}
+\label{sec:orgc734734}
+\begin{itemize}
+\item Probability \& Statistics
+\item Descriptive/Exploratory
+\item Inference
+\item Hypothesis Testing
+\item Some Recommendations for Biology
+\end{itemize}
+\subsection{Intro}
+\label{sec:org8079255}
+\subsubsection{Basic Definition}
+\label{sec:orgf795abe}
+\begin{itemize}
+\item {\color{green}Statistical inference} is the process of \textbf{drawing formal conclusions from data}.
+
+\item {\color{green}Statistical inference} occurs where one wants to infer facts about a \textbf{population} using noisy statistical data \textbf{where uncertainty} must taken into account.
+
+\item {\color{green}Statistical inference} \textbf{requires assessment of assumptions and tools} and \textbf{thinking how to draw conclusions} from data.
+\end{itemize}
+
+\subsubsection{Some Inference Goals}
+\label{sec:org1353ef1}
+\begin{itemize}
+\item \textbf{Benchmarking}
+\begin{itemize}
+\item Effectiveness of a treatment
+\end{itemize}
+
+\item \textbf{Quantify}
+\begin{itemize}
+\item Proportion of voting
+\end{itemize}
+
+\item \textbf{Relationship}
+\begin{itemize}
+\item Slope of Hoocke's law
+\end{itemize}
+
+\item \textbf{Impact}
+\begin{itemize}
+\item Confinements
+\end{itemize}
+
+\item \textbf{Probability}
+\begin{itemize}
+\item Raining tomorrow
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Some tools in Inference}
+\label{sec:orgcbe30e6}
+\begin{itemize}
+\item \textbf{\emph{Randomization}}.
+\begin{itemize}
+\item Unobserved variables may confound inferences of interest.
+\end{itemize}
+
+\item \textbf{\emph{Random sampling}}.
+\begin{itemize}
+\item Data representative of a population.
+\end{itemize}
+
+\item \textbf{\emph{Sampling models}}.
+\begin{itemize}
+\item Creating a model for the sampling process.
+\item Independent Identically Distributed (i.i.d).
+\end{itemize}
+
+\item \textbf{\emph{Hypothesis testing}}.
+\begin{itemize}
+\item Decision making under uncertainty.
+\end{itemize}
+
+\item \textbf{\emph{Confidence intervals}}.
+\begin{itemize}
+\item Quantify uncertainty in estimation.
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item \textbf{\emph{Probability Models}}.
+\begin{itemize}
+\item Formal connection between the data and population of interest.
+\end{itemize}
+
+\item \textbf{\emph{Study Design}}.
+\begin{itemize}
+\item Experiment to minimize biases and variability.
+\end{itemize}
+
+\item \textbf{\emph{Nonparametric bootstrapping}}.
+\begin{itemize}
+\item Using data to create inference with minimal probability model assumptions.
+\end{itemize}
+
+\item \textbf{\emph{Permutation}}.
+\begin{itemize}
+\item Randomization and exchangeability testing to perform inferences.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Schools Styles}
+\label{sec:orgf0a3e02}
+\begin{itemize}
+\item \textbf{{\color{green}Frequentist} Probability \& Inference}
+\begin{itemize}
+\item \textbf{Long run proportion} of times an event occurs in \textbf{independent, identically distributed repetitions}.
+\item Interpretations of \textbf{probabilities to control error rates}.
+\item \textbf{Given my data} controlling the \textbf{long run proportion} of mistakes I make \textbf{at a tolerable level}.
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item \textbf{{\color{green}Bayesian} Probability \& Inference}
+\begin{itemize}
+\item Estimate or \textbf{calculate of beliefs}, which \textbf{follow certain rules}.
+\item \textbf{Inference} is performed by \textbf{Bayesian probability representation of beliefs}.
+\item \textbf{Subjective beliefs} and the \textbf{objective information} from the data \textbf{to infer}.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Probability Definition}
+\label{sec:orgdad6f78}
+Given a random variable (experiment; say rolling a die) a \textbf{probability measure} is a population quantity that \emph{summarizes the randomness}.
+
+\begin{itemize}
+\item \textbf{number between 0 and 1}.
+\item \textbf{probability that something occurs is 1} (the die must be rolled) and
+\item The probability of the union of \textbf{any two sets of outcomes that have nothing in common} (mutually exclusive) is the \textbf{sum of their respective probabilities}.
+\end{itemize}
+\subsubsection{Rules probability must follow}
+\label{sec:org984625e}
+The Russian mathematician \href{https://en.wikipedia.org/wiki/Andrey\_Kolmogorov}{Andrey Nikolaevich Kolmogorov} formalized these rules.
+\begin{itemize}
+\item The probability that \textbf{nothing occurs is 0}
+\item The probability that \textbf{something occurs is 1}
+\item The \textbf{probability of something is} 1 minus the probability that the opposite occurs
+\item The \textbf{probability of at least one of or more things} that can not simultaneously occur, \textbf{mutually exclusive}, is the \textbf{sum of their respective probabilities}.
+\end{itemize}
+\begin{itemize}
+\item \textbf{More interestingly}
+\label{sec:org5cb2e21}
+\begin{itemize}
+\item If an event \textbf{``A'' implies the occurrence of event ``B''}, then the probability of \textbf{``A'' occurring is less than the probability that ``B'' occurs}.
+\item For \textbf{any two events the probability that at least one occurs} is the \textbf{sum of their probabilities minus their intersection}.
+\end{itemize}
+\end{itemize}
+\subsubsection{Simple Example}
+\label{sec:orgc5fb3a1}
+\begin{itemize}
+\item Event/Condition \textbf{X} with incidence of \textbf{3\%} in the population
+\item Whereas \textbf{10\%} of the population with Event/Condition \textbf{Y}.
+\item Does this imply that 13\% of people will have at least one these Event/Condition?
+\begin{itemize}
+\item Answer: \textbf{If the events can simultaneously occur}; they are not mutually exclusive so \textbf{NO}.
+\end{itemize}
+\end{itemize}
+\textbf{lets:}
+
+\begin{eqnarray*}
+    A_1 & = & \{\mbox{Event X}\} \\
+    A_2 & = & \{\mbox{Event Y}\}
+\end{eqnarray*}
+
+\textbf{Then}
+
+\begin{eqnarray*}
+    P(A_1 \cup A_2 ) & = & P(A_1) + P(A_2) - P(A_1 \cap A_2) \\
+   & = & 0.13 - \mbox{Probability of having both}
+\end{eqnarray*}
+
+Likely, some fraction of the population has both.
+
+\subsubsection{Random variables}
+\label{sec:orgf01fd57}
+\begin{itemize}
+\item A \textbf{random variable} is a numerical outcome of an experiment.
+\item The random variables come in \textbf{two varieties}, \textbf{discrete} or \textbf{continuous}.
+\begin{itemize}
+\item \textbf{Discrete} random variable take on only a \textbf{countable number of possibilities}; the probability takes specific values.
+\item \textbf{Continuous} random variable can take \textbf{any value on the real line}, or some subset; the probability they take within some range.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Quantiles}
+\label{sec:orgcb1916d}
+\begin{itemize}
+\item \textbf{Famous sample quantiles}.
+\begin{itemize}
+\item The 95th percentile on an exam, 95\% of people scored worse than 5\% scored better.
+\end{itemize}
+\item {\color{green}Population analogs}.
+\end{itemize}
+\begin{itemize}
+\item \textbf{Definition}
+\label{sec:org3fc9160}
+\begin{itemize}
+\item The  \(\alpha^{th}\) \textbf{\textbf{quantile}} of a distribution with distribution function \(F\) is the point \(x_\alpha\) so that
+$$F(x_\alpha) = \alpha$$
+\item A \textbf{\textbf{percentile}} is simply a quantile with \(\alpha\) expressed as a percent
+\item The \textbf{\textbf{median}} is the \(50^{th}\) percentile
+\end{itemize}
+\item \textbf{For example}
+\label{sec:orgbfb1e2f}
+\begin{itemize}
+\item The {\color{green}\(75^{th}\) percentile} of a distribution is the point so that:
+\begin{itemize}
+\item The probability, that a random variable from the population, \textbf{is less is 75\%}.
+\item The probability, that a random variable from the population, \textbf{is more is 25\%}.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Conditional Probability}
+\label{sec:orgc97f87a}
+\begin{itemize}
+\item \textbf{Motivating example}
+\label{sec:org148bcf1}
+\begin{itemize}
+\item \textbf{The probability of getting} a one when rolling a (standard) die is usually assumed to be one sixth.
+\item Suppose you were given the \textbf{extra information} that the {\color{green}die roll was an odd number} (hence 1, 3 or 5).
+\item \textbf{Conditional on this new information}, the probability of a one is {\color{green}now one third}.
+\end{itemize}
+\item \textbf{Definition}
+\label{sec:org1c7440b}
+\begin{itemize}
+\item Let \(B\) be an event so that \(P(B) > 0\)
+\begin{itemize}
+\item Then the conditional \textbf{probability of an event \(A\) given that \(B\) has occurred} is
+$$  P(A ~|~ B) = \frac{P(A \cap B)}{P(B)}$$
+\item Notice that \textbf{if} {\color{green}\(A\) and \(B\)} \textbf{are independent}, then
+
+$$  P(A ~|~ B) = \frac{P(A) P(B)}{P(B)} = P(A)$$
+\item $$\cap =\mbox{ intersection}$$
+\end{itemize}
+\end{itemize}
+\item \textbf{Little Example}
+\label{sec:org9a2ad25}
+\begin{itemize}
+\item Consider our die roll example, \(P(\mbox{one given that roll is odd})=P^*\).
+\begin{itemize}
+\item \(A = \{1\}\) and \(B = \{1, 3, 5\}\).
+\begin{itemize}
+\item Then
+\begin{eqnarray*} P^* & = & P(A ~|~ B) \\ \\
+& = & \frac{P(A \cap B)}{P(B)} \\ \\
+& = & \frac{P(A)}{P(B)} = \frac{1/6}{3/6} = \frac{1}{3}
+\end{eqnarray*}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Bayes' rule}
+\label{sec:orgd15260f}
+\begin{itemize}
+\item Baye's rule allows us to \textbf{reverse the conditioning} set provided that we {\color{green}know some marginal probabilities}.
+\begin{itemize}
+\item $$ P(B ~|~ A) = \frac{P(A ~|~ B) P(B)}{P(A ~|~ B) P(B) + P(A ~|~ \neg B)P(\neg B)}$$
+
+\item Where $$P(\neg B)$$ is the {\color{green}initial degree of belief in not-B (B is false)}, and $$P(\neg B)=1-P(B)$$
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item \textbf{Diagnostic tests}
+\label{sec:org8cee536}
+\begin{itemize}
+\item Let \(+\) and \(-\) be the events that the result of a diagnostic test is positive or negative respectively.
+\item Let \(D\) and \(D^c\) be the event that the subject of the test has or does not have the disease respectively.
+\item The \textbf{\textbf{sensitivity}} is the probability that the test is positive given that the subject actually has the disease, \(P(+ ~|~ D)\).
+\item The \textbf{\textbf{specificity}} is the probability that the test is negative given that the subject does not have the disease, \(P(- ~|~ D^c)\).
+\end{itemize}
+\item \textbf{More definitions}
+\label{sec:org6beb372}
+\begin{itemize}
+\item The \textbf{\textbf{positive predictive value}} is the probability that the subject has the  disease given that the test is positive, \(P(D ~|~ +)\)
+\item The \textbf{\textbf{negative predictive value}} is the probability that the subject does not have the disease given that the test is negative, \(P(D^c ~|~ -)\)
+\item The \textbf{\textbf{prevalence of the disease}} is the marginal probability of disease, \(P(D)\)
+\end{itemize}
+\end{itemize}
+\subsubsection{Using Bayes' formula}
+\label{sec:org719da94}
+\begin{eqnarray*}
+P(D | +) & = &\frac{P(+|D)P(D)}{P(+|D)P(D) + P(+|D^c)P(D^c)}\\ \\
+& = & \frac{P(+|D)P(D)}{P(+|D)P(D) + \{1-P(-|D^c)\}\{1 - P(D)\}} \\ \\
+& = & \frac{.997\times .001}{.997 \times .001 + .015 \times .999} = 0.062
+\end{eqnarray*}
+
+\begin{itemize}
+\item Then,
+\begin{itemize}
+\item \textbf{A positive test} result only suggests a \textbf{6\% probability} that the subject has the \textbf{disease}.
+\item The \textbf{positive predictive value is 6\%} for this test.
+\end{itemize}
+\end{itemize}
+\subsubsection{Likelihood ratios, using Bayes rule}
+\label{sec:org7c8266e}
+$$
+  P(D|+) = \frac{P(+|D)P(D)}{P(+|D)P(D) + P(+|D^c)P(D^c)}
+  $$
+$$P(D^c|+) = \frac{P(+|D^c)P(D^c)}{P(+|D)P(D) + P(+|D^c)P(D^c)}$$
+\begin{itemize}
+\item \textbf{Therefore}
+\begin{itemize}
+\item $$\frac{P(D|+)}{P(D^c|+)} = \frac{P(+|D)}{P(+|D^c)}\times \frac{P(D)}{P(D^c)}$$
+ie $$\mbox{post-test odds of }D = DLR_+\times\mbox{pre-test odds of }D$$
+\begin{itemize}
+\item DLR, \textbf{Diagnostic Likelihood Ratio} test
+\item Similarly, \(DLR_-\) relates the decrease in the odds of the disease after a negative test result to the odds of disease prior to the test.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Expected values}
+\label{sec:org579d420}
+\begin{itemize}
+\item Expected values are useful for \textbf{characterizing a distributions}.
+\item The \textbf{mean} is a characterization of \textbf{its center}.
+\item The \textbf{variance and standard deviation} are characterizations of how \textbf{spread out} it is.
+\item Our \textbf{sample expected values} (the sample mean and variance) will \textbf{estimate the population} versions.
+\end{itemize}
+
+\subsubsection{The population mean}
+\label{sec:org50655fb}
+\begin{itemize}
+\item The \textbf{\textbf{expected value}} or \textbf{\textbf{mean}} of a random variable is the center of its distribution
+\item For {\color{green}discrete random variable \(X\) with PMF \(p(x)\)}, it is defined as follows
+$$
+    E[X] = \sum_x xp(x).
+    $$
+where the \textbf{sum is taken over the possible values of \(x\)}
+\item {\color{green}\(E[X]\) represents the center of mass} of a collection of {\color{green}locations and weights, \(\{x, p(x)\}\)}
+\end{itemize}
+
+\subsubsection{The sample mean}
+\label{sec:org5892df1}
+\begin{itemize}
+\item The {\color{green}ample mean estimates this population mean}.
+\item The \textbf{center of mass of the data is the empirical mean}.
+\end{itemize}
+$$
+\bar X = \sum_{i=1}^n x_i p(x_i)
+$$
+where \(p(x_i) = 1/n\)
+
+\subsubsection{What about a biased coin?}
+\label{sec:org73b8c72}
+\begin{itemize}
+\item Suppose that a random variable, \(X\), is so that
+\end{itemize}
+\(P(X=1) = p\) and \(P(X=0) = (1 - p)\)
+\begin{itemize}
+\item (This is a biased coin when \(p\neq 0.5\))
+\item What is its expected value?
+\end{itemize}
+$$
+E[X] = 0 * (1 - p) + 1 * p = p
+$$
+\subsubsection{Continuous random variables}
+\label{sec:org94878cb}
+\begin{itemize}
+\item For a continuous random variable, \(X\), with density, \(f\), the expected value is again exactly the center of mass of the density.
+\end{itemize}
+\subsubsection{Summary of Expected Values}
+\label{sec:org4526af8}
+\begin{itemize}
+\item \textbf{Facts}
+\begin{itemize}
+\item Expected values are \textbf{properties of distributions}.
+\item The \textbf{average of random variables is} itself \textbf{a random variable} and its associated distribution \textbf{has an expected value}.
+\item The \textbf{center} of this distribution is \textbf{the same as that of the original distribution}.
+\item Therefore, the expected value of the \textbf{\textbf{sample mean}} is the \textbf{population mean} trying to estimate.
+\item When the \textbf{expected value of an estimator is what its trying to estimate}, we say that the estimator is \textbf{\textbf{unbiased}}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{The variance}
+\label{sec:orge85e751}
+
+\begin{itemize}
+\item The variance of a random variable is a measure of \textbf{spread}
+\item If \(X\) is a random variable with mean \(\mu\), the variance of \(X\) is defined as
+\end{itemize}
+
+$$
+Var(X) = E[(X - \mu)^2] = E[X^2] - E[X]^2
+$$
+
+\begin{itemize}
+\item The expected (squared) distance from the mean
+\item Densities with a higher variance are more spread out than densities with a lower variance
+\item The square root of the variance is called the \textbf{\textbf{standard deviation}}
+\item The standard deviation has the same units as \(X\)
+\end{itemize}
+
+---
+
+\subsubsection{Examples Variance}
+\label{sec:orgb14281d}
+\begin{itemize}
+\item Example
+\label{sec:org10b3347}
+
+\begin{itemize}
+\item What's the variance from the result of a toss of a die?
+
+\begin{itemize}
+\item \(E[X] = 3.5\)
+\item \(E[X^2] = 1 ^ 2 \times \frac{1}{6} + 2 ^ 2 \times \frac{1}{6} + 3 ^ 2 \times \frac{1}{6} + 4 ^ 2 \times \frac{1}{6} + 5 ^ 2 \times \frac{1}{6} + 6 ^ 2 \times \frac{1}{6} = 15.17\)
+\end{itemize}
+
+\item \(Var(X) = E[X^2] - E[X]^2 \approx 2.92\)
+\end{itemize}
+
+---
+
+\item Example
+\label{sec:org49547b1}
+
+\begin{itemize}
+\item What's the variance from the result of the toss of a coin with probability of heads (1) of \(p\)?
+
+\begin{itemize}
+\item \(E[X] = 0 \times (1 - p) + 1 \times p = p\)
+\item \(E[X^2] = E[X] = p\)
+\end{itemize}
+\end{itemize}
+
+$$Var(X) = E[X^2] - E[X]^2 = p - p^2 = p(1 - p)$$
+
+
+---
+\end{itemize}
+\subsubsection{The sample variance}
+\label{sec:org5a4ee0c}
+\begin{itemize}
+\item The sample variance is
+\end{itemize}
+$$
+S^2 = \frac{\sum_{i=1} (X_i - \bar X)^2}{n-1}
+$$
+(almost, but not quite, the average squared deviation from
+the sample mean)
+\begin{itemize}
+\item It is also a random variable
+\begin{itemize}
+\item It has an associate population distribution
+\item Its expected value is the population variance
+\item Its distribution gets more concentrated around the population variance with mroe data
+\end{itemize}
+\item Its square root is the sample standard deviation
+\end{itemize}
+
+
+---
+\subsubsection{Recall the mean}
+\label{sec:orga4f29b6}
+\begin{itemize}
+\item Recall that the average of random sample from a population is itself a random variable
+\item We know that this distribution is centered around the population mean, \(E[\bar X] = \mu\)
+\item We also know what its variance is \(Var(\bar X) = \sigma^2 / n\)
+\item This is very useful, since we don't have repeat sample means to get its variance; now we know how it relates to the population variance
+\item We call the standard deviation of a statistic a standard error
+\end{itemize}
+
+---
+\subsubsection{To summarize}
+\label{sec:orgcca2283}
+\begin{itemize}
+\item The sample variance, \(S^2\), estimates the population variance, \(\sigma^2\)
+\item The distribution of the sample variance is centered around \(\sigma^2\)
+\item The variance of the sample mean is \(\sigma^2 / n\)
+\begin{itemize}
+\item Its logical estimate is \(s^2 / n\)
+\item The logical estimate of the standard error is \(S / \sqrt{n}\)
+\end{itemize}
+\item \(S\), the standard deviation, talks about how variable the population is
+\item \(S/\sqrt{n}\), the standard error, talks about how variable averages of random samples of size \(n\) from the population are
+\end{itemize}
+
+---
+\subsubsection{Summarizing what we know about variances}
+\label{sec:org0a659bb}
+\begin{itemize}
+\item The sample variance estimates the population variance
+\item The distribution of the sample variance is centered at what its estimating
+\item It gets more concentrated around the population variance with larger sample sizes
+\item The variance of the sample mean is the population variance divided by \(n\)
+\begin{itemize}
+\item The square root is the standard error
+\end{itemize}
+\item It turns out that we can say a lot about the distribution of averages from random samples, even though we only get one to look at in a given data set
+\end{itemize}
+
+\subsubsection{Hypothesis testing}
+\label{sec:orgcac8263}
+\begin{itemize}
+\item \textbf{Hypothesis testing} is concerned with {\color{green}making decisions using data}.
+\item \textbf{A null hypothesis} is specified that {\color{green}represents the status quo},
+usually \textbf{labeled \(H_0\)}.
+\item The \textbf{null hypothesis} is {\color{green}assumed true} and statistical \textbf{evidence is required
+to reject it} in favor of a research or alternative hypothesis.
+\end{itemize}
+\subsubsection{Hypothesis testing decision}
+\label{sec:org731ce84}
+\begin{itemize}
+\item The alternative hypotheses are typically of the form \(<\), \(>\) or \(\neq\)
+\item Note that there are \textbf{four possible outcomes} of our {\color{green}statistical decision} process
+\end{itemize}
+\begin{center}
+\begin{tabular}{lll}
+Truth & Decide & Result\\
+\hline
+\(H_0\) & \(H_0\) & Correctly accept null\\
+\(H_0\) & \(H_a\) & Type I error\\
+\(H_a\) & \(H_a\) & Correctly reject null\\
+\(H_a\) & \(H_0\) & Type II error\\
+\end{tabular}
+\end{center}
+\subsubsection{General rules}
+\label{sec:org1cd9738}
+\begin{itemize}
+\item The \(Z\) test for \(H_0:\mu = \mu_0\), versus
+\begin{itemize}
+\item \(H_1: \mu < \mu_0\)
+\item \(H_2: \mu \neq \mu_0\)
+\item \(H_3: \mu > \mu_0\)
+\end{itemize}
+\begin{itemize}
+\item Test statistic $$TS = \frac{\bar{X} - \mu_0}{S / \sqrt{n}}$$
+\item Reject the null hypothesis when
+\begin{itemize}
+\item \(TS \leq Z_{\alpha} = -Z_{1 - \alpha}\)
+\item \(|TS| \geq Z_{1 - \alpha / 2}\)
+\item \(TS \geq Z_{1 - \alpha}\)
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\subsubsection{Notes}
+\label{sec:org1374b45}
+\begin{itemize}
+\item We:
+\begin{itemize}
+\item Fix {\color{green}\(\alpha\) to be low}, so if we reject \(H_0\): our model is wrong or there is a \textbf{low probability that we have made an error}.
+\item \textbf{Not fixed the probability of a type II error}, {\color{green}\(\beta\)}; we tend to say \emph{Fail to reject \(H_0\)} rather than accepting \(H_0\).
+\item \textbf{Statistical significance} is no the same as \textbf{Scientific significance}.
+\end{itemize}
+\end{itemize}
+\subsubsection{Connections with confidence intervals}
+\label{sec:orga777fd5}
+\begin{itemize}
+\item Consider testing \(H_0: \mu = \mu_0\) versus \(H_a: \mu \neq \mu_0\).
+\item Take the set of all possible values for which you fail to reject \(H_0\), this set is a \((1-\alpha)100\%\) confidence interval for \(\mu\).
+\item The same works in reverse; if a \((1-\alpha)100\%\) interval contains \(\mu_0\), then we \textbf{fail  to} reject \(H_0\).
+\end{itemize}
+\subsubsection{P-values}
+\label{sec:orgae958bb}
+\begin{itemize}
+\item Most common measure of statistical significance.
+\item Their ubiquity, along with concern over their interpretation and use makes them controversial among statisticians.
+\end{itemize}
+\subsubsection{What is a P-value?}
+\label{sec:orgebce5c6}
+Idea: Suppose nothing is going on - how unusual is it to see the estimate we got?
+Approach:
+\begin{enumerate}
+\item Define the hypothetical distribution of a data summary (statistic) when ``nothing is going on'' (null hypothesis)
+\item Calculate the summary/statistic with the data we have (test statistic)
+\item Compare what we calculated to our hypothetical distribution and see if the value is ``extreme'' (p-value)
+\end{enumerate}
+\subsubsection{P-values}
+\label{sec:org4549f8e}
+\begin{itemize}
+\item The P-value is the probability under the null hypothesis of obtaining evidence as extreme or more extreme than that obtained
+\item If the P-value is small, then either \(H_0\) is true and we have observed a rare event or \(H_0\) is false
+\item Suppos that you get a \(T\) statistic of \(2.5\) for 15 df testing \(H_0:\mu = \mu_0\) versus \(H_a : \mu > \mu_0\).
+\begin{itemize}
+\item What's the probability of getting a \(T\) statistic as large as \(2.5\)?
+\end{itemize}
+\end{itemize}
+
+```r
+pt(2.5, 15, lower.tail = FALSE)
+```
+
+```
+\#\# [1] 0.01225
+```
+
+\begin{itemize}
+\item Therefore, the probability of seeing evidence as extreme or more extreme than that actually obtained under \(H_0\) is 0.0123
+\end{itemize}
+
+---
+\subsubsection{The attained significance level}
+\label{sec:org0dd49b8}
+\begin{itemize}
+\item Our test statistic was \(2\) for \(H_0 : \mu_0  = 30\) versus \(H_a:\mu > 30\).
+\item Notice that we rejected the one sided test when \(\alpha = 0.05\), would we reject if \(\alpha = 0.01\), how about \(0.001\)?
+\item The smallest value for alpha that you still reject the null hypothesis is called the \textbf{attained significance level}
+\item This is equivalent, but philosophically a little different from, the \textbf{P-value}
+\end{itemize}
+
+---
+\subsubsection{Notes}
+\label{sec:org1ffa127}
+\begin{itemize}
+\item By reporting a \textbf{p-value} the reader can perform the hypothesis test at whatever \textbf{\(\alpha\) level}.
+\item If the \textbf{p-value} is \textbf{less than \(\alpha\)} you {\color{green}reject the null hypothesis}.
+\item For \textbf{two sided hypothesis test}, {\color{green}double the smaller of the two one sided hypothesis test P-values}.
+\end{itemize}
+\subsubsection{Power}
+\label{sec:org6893978}
+\begin{itemize}
+\item Power is the probability of rejecting the null hypothesis when it is false
+\item Ergo, power (as its name would suggest) is a good thing; you want more power
+\item A type II error (a bad thing, as its name would suggest) is failing to reject the null hypothesis when it's false; the probability of a type II error is usually called \(\beta\)
+\item Note Power  \(= 1 - \beta\)
+\end{itemize}
+
+---
+\subsubsection{Notes}
+\label{sec:org7e034d3}
+\begin{itemize}
+\item Consider our previous example involving RDI
+\item \(H_0: \mu = 30\) versus \(H_a: \mu > 30\)
+\item Then power is
+\end{itemize}
+$$P\left(\frac{\bar X - 30}{s /\sqrt{n}} > t_{1-\alpha,n-1} ~;~ \mu = \mu_a \right)$$
+\begin{itemize}
+\item Note that this is a function that depends on the specific value of \(\mu_a\)!
+\item Notice as \(\mu_a\) approaches \(30\) the power approaches \(\alpha\)
+\end{itemize}
+
+
+---
+\subsubsection{Calculating power for Gaussian data}
+\label{sec:orga5b9e28}
+\begin{itemize}
+\item We reject if \(\frac{\bar X - 30}{\sigma /\sqrt{n}} > z_{1-\alpha}\)
+\begin{itemize}
+\item Equivalently if \(\bar X > 30 + Z_{1-\alpha} \frac{\sigma}{\sqrt{n}}\)
+\end{itemize}
+\item Under \(H_0 : \bar X \sim N(\mu_0, \sigma^2 / n)\)
+\item Under \(H_a : \bar X \sim N(\mu_a, \sigma^2 / n)\)
+\item So we want
+\end{itemize}
+```r
+alpha = 0.05
+z = qnorm(1 - alpha)
+pnorm(mu0 + z * sigma / sqrt(n), mean = mua, sd = sigma / sqrt(n),
+      lower.tail = FALSE)
+```
+
+---
+\subsubsection{Example continued}
+\label{sec:org5e81ed3}
+\begin{itemize}
+\item \(\mu_a = 32\), \(\mu_0 = 30\), \(n =16\), \(\sigma = 4\)
+\end{itemize}
+
+```r
+mu0 = 30; mua = 32; sigma = 4; n = 16
+z = qnorm(1 - alpha)
+```
+
+```
+\#\# Error: object 'alpha' not found
+```
+
+```r
+pnorm(mu0 + z * sigma / sqrt(n), mean = mu0, sd = sigma / sqrt(n),
+      lower.tail = FALSE)
+```
+
+```
+\#\# Error: object 'z' not found
+```
+
+```r
+pnorm(mu0 + z * sigma / sqrt(n), mean = mua, sd = sigma / sqrt(n),
+      lower.tail = FALSE)
+```
+
+```
+\#\# Error: object 'z' not found
+```
+
+---
+\subsubsection{Question}
+\label{sec:orga6b6b35}
+\begin{itemize}
+\item When testing \(H_a : \mu > \mu_0\), notice if power is \(1 - \beta\), then
+\end{itemize}
+$$1 - \beta = P\left(\bar X > \mu_0 + z_{1-\alpha} \frac{\sigma}{\sqrt{n}} ; \mu = \mu_a \right)$$
+\begin{itemize}
+\item where \(\bar X \sim N(\mu_a, \sigma^2 / n)\)
+\item Unknowns: \(\mu_a\), \(\sigma\), \(n\), \(\beta\)
+\item Knowns: \(\mu_0\), \(\alpha\)
+\item Specify any 3 of the unknowns and you can solve for the remainder
+\end{itemize}
+
+---
+\subsubsection{Notes}
+\label{sec:orgcd5e6b9}
+\begin{itemize}
+\item The calculation for \(H_a:\mu < \mu_0\) is similar
+\item For \(H_a: \mu \neq \mu_0\) calculate the one sided power using \(\alpha / 2\) (this is only approximately right, it excludes the probability of getting a large TS in the opposite direction of the truth)
+\item Power goes up as \(\alpha\) gets larger
+\item Power of a one sided test is greater than the power of the associated two sided test
+\item Power goes up as \(\mu_1\) gets further away from \(\mu_0\)
+\item Power goes up as \(n\) goes up
+\item Power doesn't need \(\mu_a\), \(\sigma\) and \(n\), instead only \(\frac{\sqrt{n}(\mu_a - \mu_0)}{\sigma}\)
+\begin{itemize}
+\item The quantity \(\frac{\mu_a - \mu_0}{\sigma}\) is called the effect size, the difference in the means in standard deviation units.
+\item Being unit free, it has some hope of interpretability across settings
+\end{itemize}
+\end{itemize}
+
+---
+\subsubsection{T-test power}
+\label{sec:orgb648a41}
+\begin{itemize}
+\item Consider calculating power for a Gossett's \(T\) test for our example
+\item The power is
+$$
+  P\left(\frac{\bar X - \mu_0}{S /\sqrt{n}} > t_{1-\alpha, n-1} ~;~ \mu = \mu_a \right)
+  $$
+\item Calcuting this requires the non-central t distribution.
+\item `power.t.test` does this very well
+\begin{itemize}
+\item Omit one of the arguments and it solves for it
+\end{itemize}
+\end{itemize}
+
+---
+\subsubsection{Key ideas}
+\label{sec:orga4bee19}
+
+\begin{itemize}
+\item Hypothesis testing/significance analysis is commonly overused
+\item Correcting for multiple testing avoids false positives or discoveries
+\item Two key components
+\begin{itemize}
+\item Error measure
+\item Correction
+\end{itemize}
+\end{itemize}
+
+
+---
+
+\subsubsection{Three eras of statistics}
+\label{sec:org6edcfbd}
+
+The age of Quetelet and his successors, in which huge census-level data sets were brought to bear on simple but important questions: Are there more male than female births? Is the rate of insanity rising?
+
+The classical period of Pearson, Fisher, Neyman, Hotelling, and their successors, intellectual giants who developed a theory of optimal inference capable of wringing every drop of information out of a scientific experiment. The questions dealt with still tended to be simple Is treatment A better than treatment B?
+
+The era of scientific mass production, in which new technologies typified by the microarray allow a single team of scientists to produce data sets of a size Quetelet would envy. But now the flood of data is accompanied by a deluge of questions, perhaps thousands of estimates or hypothesis tests that the statistician is charged with answering together; not at all what the classical masters had in mind. Which variables matter among the thousands measured? How do you relate unrelated information?
+
+[\url{http://www-stat.stanford.edu/\~ckirby/brad/papers/2010LSIexcerpt.pdf}](\url{http://www-stat.stanford.edu/\~ckirby/brad/papers/2010LSIexcerpt.pdf})
+
+---
+
+\subsubsection{Types of errors}
+\label{sec:org4468ca7}
+
+Suppose you are testing a hypothesis that a parameter \(\beta\) equals zero versus the alternative that it does not equal zero. These are the possible outcomes.
+
+\begin{center}
+\begin{tabular}{llll}
+ & \(\beta=0\) & \(\beta\neq0\) & Hypotheses\\
+\hline
+Claim \(\beta=0\) & \(U\) & \(T\) & \(m-R\)\\
+Claim \(\beta\neq 0\) & \(V\) & \(S\) & \(R\)\\
+Claims & \(m_0\) & \(m-m_0\) & \(m\)\\
+\end{tabular}
+\end{center}
+
+
+Type I error or false positive (\(V\)) Say that the parameter does not equal zero when it does
+
+Type II error or false negative (\(T\)) Say that the parameter equals zero when it doesn't
+
+
+---
+
+\subsubsection{Error rates}
+\label{sec:orgf14ec53}
+
+False positive rate
+\begin{itemize}
+\item The rate at which false results (\(\beta = 0\)) are called significant: $$E\left[\frac{V}{m_0}\right]$$
+\end{itemize}
+
+Family wise error rate (FWER)
+\begin{itemize}
+\item The probability of at least one false positive \({\rm Pr}(V \geq 1)\)
+\end{itemize}
+
+False discovery rate (FDR)
+\begin{itemize}
+\item The rate at which claims of significance are false \(E\left[\frac{V}{R}\right]\)
+
+\item The false positive rate is closely related to the type I error rate [\url{http://en.wikipedia.org/wiki/False\_positive\_rate}](\url{http://en.wikipedia.org/wiki/False\_positive\_rate})
+\end{itemize}
+
+---
+
+\subsubsection{Controlling the false positive rate}
+\label{sec:orgb4968de}
+
+If P-values are correctly calculated calling all \(P < \alpha\) significant will control the false positive rate at level \(\alpha\) on average.
+
+Problem: Suppose that you perform 10,000 tests and \(\beta = 0\) for all of them.
+
+Suppose that you call all \(P < 0.05\) significant.
+
+The expected number of false positives is: \(10,000 \times 0.05 = 500\)  false positives.
+
+How do we avoid so many false positives?
+
+
+---
+
+\subsubsection{Controlling family-wise error rate (FWER)}
+\label{sec:org7c654c7}
+
+
+The \href{http://en.wikipedia.org/wiki/Bonferroni\_correction}{Bonferroni correction} is the oldest multiple testing correction.
+
+Basic idea:
+\begin{itemize}
+\item Suppose you do \(m\) tests
+\item You want to control FWER at level \(\alpha\) so \(Pr(V \geq 1) < \alpha\)
+\item Calculate P-values normally
+\item Set \(\alpha_{fwer} = \alpha/m\)
+\item Call all \$P\$-values less than \(\alpha_{fwer}\) significant
+\end{itemize}
+
+Pros: Easy to calculate, conservative
+Cons: May be very conservative
+
+
+---
+
+\subsubsection{Controlling false discovery rate (FDR)}
+\label{sec:org4470760}
+
+This is the most popular correction when performing lots of tests say in genomics, imaging, astronomy, or other signal-processing disciplines.
+
+Basic idea:
+\begin{itemize}
+\item Suppose you do \(m\) tests
+\item You want to control FDR at level \(\alpha\) so \(E\left[\frac{V}{R}\right]\)
+\item Calculate P-values normally
+\item Order the P-values from smallest to largest \(P_{(1)},...,P_{(m)}\)
+\item Call any \(P_{(i)} \leq \alpha \times \frac{i}{m}\) significant
+\end{itemize}
+
+Pros: Still pretty easy to calculate, less conservative (maybe much less)
+
+Cons: Allows for more false positives, may behave strangely under dependence
+
+---
+
+\subsubsection{Adjusted P-values}
+\label{sec:orgefbcc83}
+
+\begin{itemize}
+\item One approach is to adjust the threshold \(\alpha\)
+\item A different approach is to calculate ``adjusted p-values''
+\item They are not p-values anymore
+\item But they can be used directly without adjusting \(\alpha\)
+\end{itemize}
+
+Example:
+\begin{itemize}
+\item Suppose P-values are \(P_1,\ldots,P_m\)
+\item You could adjust them by taking \(P_i^{fwer} = \max{m \times P_i,1}\) for each P-value.
+\item Then if you call all \(P_i^{fwer} < \alpha\) significant you will control the FWER.
+\end{itemize}
+
+---
+
+\subsubsection{Case Study}
+\label{sec:orgd39c5a1}
+\begin{itemize}
+\item Case study I: no true positives
+\label{sec:org014a8fc}
+
+
+```r
+set.seed(1010093)
+pValues <- rep(NA, 1000)
+for (i in 1:1000) \{
+    y <- rnorm(20)
+    x <- rnorm(20)
+    pValues[i] <- summary(lm(y \textasciitilde{} x))\$coeff[2, 4]
+\}
+
+sum(pValues < 0.05)
+```
+
+```
+\#\# [1] 51
+```
+
+
+---
+
+\item Case study I: no true positives
+\label{sec:org3feed36}
+
+
+```r
+
+sum(p.adjust(pValues, method = ``bonferroni'') < 0.05)
+```
+
+```
+\#\# [1] 0
+```
+
+```r
+
+sum(p.adjust(pValues, method = ``BH'') < 0.05)
+```
+
+```
+\#\# [1] 0
+```
+
+
+
+---
+
+\item Case study II: 50\% true positives
+\label{sec:org0db8963}
+
+
+```r
+set.seed(1010093)
+pValues <- rep(NA, 1000)
+for (i in 1:1000) \{
+    x <- rnorm(20)
+
+    if (i <= 500) \{
+        y <- rnorm(20)
+    \} else \{
+        y <- rnorm(20, mean = 2 * x)
+    \}
+    pValues[i] <- summary(lm(y \textasciitilde{} x))\$coeff[2, 4]
+\}
+trueStatus <- rep(c(``zero'', ``not zero''), each = 500)
+table(pValues < 0.05, trueStatus)
+```
+
+```
+\#\#        trueStatus
+\#\#         not zero zero
+\#\#   FALSE        0  476
+\#\#   TRUE       500   24
+```
+
+
+---
+
+\item Case study II: 50\% true positives
+\label{sec:org03968f5}
+
+
+```r
+
+table(p.adjust(pValues, method = ``bonferroni'') < 0.05, trueStatus)
+```
+
+```
+\#\#        trueStatus
+\#\#         not zero zero
+\#\#   FALSE       23  500
+\#\#   TRUE       477    0
+```
+
+```r
+
+table(p.adjust(pValues, method = ``BH'') < 0.05, trueStatus)
+```
+
+```
+\#\#        trueStatus
+\#\#         not zero zero
+\#\#   FALSE        0  487
+\#\#   TRUE       500   13
+```
+
+
+
+---
+
+\item Case study II: 50\% true positives
+\label{sec:org5919ea3}
+
+\_\textsubscript{P}-values versus adjusted P-values\_\_
+
+```r
+par(mfrow = c(1, 2))
+plot(pValues, p.adjust(pValues, method = ``bonferroni''), pch = 19)
+plot(pValues, p.adjust(pValues, method = ``BH''), pch = 19)
+```
+
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png)
+
+
+
+---
+\end{itemize}
+
+\subsubsection{Notes and resources}
+\label{sec:org8421024}
+
+Notes:
+ Multiple testing is an entire subfield
+ A basic Bonferroni/BH correction is usually enough
+ If there is strong dependence between tests there may be problems
+\begin{itemize}
+\item Consider method=``BY''
+\end{itemize}
+
+Further resources:
+ [Multiple testing procedures with applications to genomics](\url{http://www.amazon.com/Multiple-Procedures-Applications-Genomics-Statistics/dp/0387493166/ref=sr\_1\_2/102-3292576-129059?ie=UTF8\&s=books\&qid=1187394873\&sr=1-2})
+ [Statistical significance for genome-wide studies](\url{http://www.pnas.org/content/100/16/9440.full})
+ [Introduction to multiple testing](\url{http://ies.ed.gov/ncee/pubs/20084018/app\_b.asp})
+
+\section{StatsBiol}
+\label{sec:orgb24c718}
+
+\begin{figure}[htp] \centering
+  \includegraphics[width=0.9\linewidth]{./figures/CM-Lectures/SciSci/Statistics} \caption{ (Network and Science Compexity)}
+  \end{figure}
+
+\subsection{Descriptive Statistics}
+\label{sec:org39d5bb7}
+
+\begin{longtable}{|p{3cm}|p{6cm}|p{6cm}|}
+Term & Meaning & Common Uses\\
+\hline
+\endfirsthead
+\multicolumn{3}{l}{Continued from previous page} \\
+\hline
+
+Term & Meaning & Common Uses \\
+
+\hline
+\endhead
+\hline\multicolumn{3}{r}{Continued on next page} \\
+\endfoot
+\endlastfoot
+\hline
+Standard deviation & The typical difference between each value and the mean value. & Describing how broadly the sample values are distributed.  $$s.d.=\sqrt{\sum(X-\bar{X})^2/(N-1)}$$\\
+Standard error of the mean (s.e.m) & An estimate how variable the means will be if the experiment is repeated multiple times. & Inferring where the population mean is likely to lie or whether set of samples are likely to come from the sample population.  $$s.e.m.=s.d./\sqrt{N}$$\\
+Confidence Interval (CI:95\%) & with 95\% confidence, the population mean will lie in this interval. & Top interfere where the population mean lies, and to compare two populations $$CI=mean\pm s.e.m. \times t_{(N-1)}$$\\
+Independent Data & Values from separate of the same type that are not linked & Testing hypothesis about population.\\
+Replicate data & Values from experiment where everything is linked as much as possible. & Serves as an internal check on performance of an experiment.\\
+Sampling error & Variation caused by sampling part of a population rather than measuring the whole population. & Can reveal bias in the data or problems with conduct of experiment. In binomial distributions the expected is $$\sqrt{Np(1-p)}$$; in Poisson the expected s.d. is $$\sqrt{mean}$$\\
+\hline
+ &  & \\
+\end{longtable}
+
+\subsection{Statistical Hypothesis Testing}
+\label{sec:orge5c3d4e}
+\begin{itemize}
+\item Null hypothesis
+\begin{itemize}
+\item \textbf{Pearson’s correlation test} is that there is no {\color{green}relationship between two variables}.
+\item The null hypothesis for the \textbf{Student’s t test} is that there is no {\color{green}difference between the means of two populations}.
+\end{itemize}
+\end{itemize}
+
+\subsection{p-value (p)}
+\label{sec:org478064e}
+\begin{itemize}
+\item A \textbf{p-value}, which is the \textbf{probability of observing the result} given that the {\color{green}null hypothesis is true}.
+\begin{itemize}
+\item {\color{blue}not the reverse, as is often the case with misinterpretations}.
+\end{itemize}
+\item \(p <= \alpha\): \textbf{reject \(H_0\)}, different distribution.
+\item \(p > \alpha\): \textbf{fail to reject \(H_0\)}, same distribution.
+\end{itemize}
+
+\subsection{Errors}
+\label{sec:org20861b6}
+\begin{itemize}
+\item There are \textbf{two types of errors}:
+\item \textbf{Type I Error}. {\color{green}Reject the null hypothesis when there is in fact no significant effect} {\color{yellow}- false positive}.
+\begin{itemize}
+\item The p-value is optimistically small.
+\end{itemize}
+\item \textbf{Type II Error}. {\color{green}Not reject the null hypothesis when there is a significant effect} {\color{yellow}-false negative}.
+\begin{itemize}
+\item The p-value is pessimistically large.
+\end{itemize}
+\end{itemize}
+
+\subsection{What Is Statistical Power?}
+\label{sec:org4aa735d}
+\begin{itemize}
+\item {\color{green}Statistical power}, or the power of a hypothesis test is the \textbf{probability that the test correctly rejects the null hypothesis}.
+\begin{itemize}
+\item Power = 1 - Type II Error
+\item Pr(True Positive) = 1 - Pr(False Negative)
+\end{itemize}
+\end{itemize}
+More intuitively, the \textbf{statistical power} can be thought of as the \textbf{probability of accepting an alternative hypothesis, when the alternative hypothesis is true}.
+\begin{itemize}
+\item \textbf{Low Statistical Power}:
+\begin{itemize}
+\item Large risk of committing Type II errors.
+\end{itemize}
+\item \textbf{High Statistical Power}:
+\begin{itemize}
+\item Small risk of committing Type II errors.
+\end{itemize}
+\end{itemize}
+
+\subsection{Statistical Power}
+\label{sec:org72f27df}
+\begin{itemize}
+\item The \textbf{statistical power of a hypothesis test} is the {\color{green}probability of detecting an effect, if there is a true effect present to detect}.
+\end{itemize}
+
+\subsection{Power Analysis}
+\label{sec:orge33f8f3}
+\begin{itemize}
+\item \textbf{Effect Size}.
+\begin{itemize}
+\item The quantified magnitude of a result present in the population.
+\item Effect size is calculated using a specific statistical measure, such as Pearson’s correlation coefficient for the relationship between variables.
+\end{itemize}
+\item \textbf{Sample Size}.
+\begin{itemize}
+\item The number of observations in the sample.
+\end{itemize}
+\item \textbf{Significance}.
+\begin{itemize}
+\item The significance level used in the statistical test, e.g. alpha. Often set to 5\% or 0.05.
+\end{itemize}
+\item \textbf{Statistical Power}.
+\begin{itemize}
+\item The probability of accepting the alternative hypothesis if it is true.
+\end{itemize}
+\end{itemize}
+\end{document}

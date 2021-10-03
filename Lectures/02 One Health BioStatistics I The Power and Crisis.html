@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Class 2: One Health, BioStatistics I: The Power and Crisis</title>
+<meta name="description" content="Description
+School specific teaching materials"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<base target="_blank">
+<base href="../">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Class 2: One Health, BioStatistics I: The Power and Crisis</h1>
+</section>
+<section>
+<section id="slide-org116ec50">
+<h2 id="org116ec50"><span class="section-number-2">1.</span> Introduction and Recap of Last Class</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-org3da7718">
+<h3 id="org3da7718"><span class="section-number-3">1.1.</span> Recap of Last Class</h3>
+<ul>
+<li class="fragment appear">Introduction to Biostatistics</li>
+<li class="fragment appear">First Part Content</li>
+<li class="fragment appear">Second Part Content</li>
+<li class="fragment appear">Laboratory</li>
+
+</ul>
+</section>
+<section id="slide-Lectures/One Health BioStatistics I The Power and Crisis/Outline">
+<h3 id="Lectures/One Health BioStatistics I The Power and Crisis/Outline"><span class="section-number-3">1.2.</span> Lecture Outline</h3>
+<ul>
+<li class="fragment appear">Motivations</li>
+<li class="fragment appear">The Power</li>
+<li class="fragment appear">Probability, Expectations &amp; Variance</li>
+<li class="fragment appear">Intervals, Testing &amp; p-Values</li>
+<li class="fragment appear">StatsBiol</li>
+<li class="fragment appear">Laboratory</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org7b813bf">
+<h2 id="org7b813bf"><span class="section-number-2">2.</span> Motivations</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-org799ef8b">
+<h3 id="org799ef8b"><span class="section-number-3">2.1.</span> The Crisis</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+</section>
+<section id="slide-Crisis">
+<h4 id="Crisis"><span class="section-number-4">2.1.1.</span> The Crisis</h4>
+
+<div id="org7a8ca58" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/reproducibility-crisis.jpg" alt="reproducibility-crisis.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-ObjAgendaCrisis">
+<h4 id="ObjAgendaCrisis"><span class="section-number-4">2.1.2.</span> Objectives &amp; Agenda</h4>
+<ul>
+<li class="fragment appear">Critical Thinking &amp; Objectivity</li>
+<li class="fragment appear">Bias in Knowledge &amp; Believes</li>
+<li class="fragment appear">Customs &amp; Best Practice</li>
+<li class="fragment appear">Societal Pressures</li>
+
+</ul>
+
+</section>
+<section id="slide-orgc3ea441">
+<h4 id="orgc3ea441"><span class="section-number-4">2.1.3.</span> Where we are</h4>
+<div class="outline-text-4" id="text-2-1-3">
+</div>
+<ul class="org-ul">
+<li><a id="orgae272ff"></a>Ask yourself<br />
+<div class="column" style="float:left; font-size:80%; width:65%">
+
+<div id="org096c774" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online1.png" alt="reproducibility-graphic-online1.png" />
+</p>
+</div>
+</div>
+<div class="column" style="float:right; font-size:60%; width:35%">
+<ul>
+<li class="fragment appear">90% Recognize a <b>Crisis on REPRODUCIBILITY</b></li>
+
+</ul>
+</div>
+</section>
+<section id="slide-orgae272ff-split">
+</li>
+<li><a id="org93ca616"></a>Trust you field?<br />
+<div class="column" style="float:left; font-size:80%; width:40%">
+
+<div id="org3a79d12" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online2.jpg" alt="reproducibility-graphic-online2.jpg" />
+</p>
+</div>
+</div>
+<div class="column" style="float:right; font-size:60%; width:55%">
+<ul>
+<li class="fragment appear">Quantification makes a difference?.</li>
+<li class="fragment appear">Physicist &amp; chemists more confident</li>
+
+</ul>
+</div>
+</section>
+<section id="slide-org93ca616-split">
+</li>
+<li><a id="orgf644f66"></a>Have you?<br />
+<div class="column" style="float:left; font-size:80%; width:35%">
+
+<div id="org6ae85ab" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online3.jpg" alt="reproducibility-graphic-online3.jpg" />
+</p>
+</div>
+</div>
+<div class="column" style="float:right; font-size:60%; width:55%">
+<ul>
+<li class="fragment appear">Fail to reproduce results:
+<ul>
+<li>Someone else 60-80%</li>
+<li>My own 40-60%</li>
+
+</ul></li>
+<li class="fragment appear">Publishing difficulty
+<ul>
+<li>of failing reproduction 13%</li>
+<li>vs successful reproduction 24%</li>
+
+</ul></li>
+
+</ul>
+</div>
+</section>
+<section id="slide-orgf644f66-split">
+</li>
+<li><a id="orgaee6506"></a>Why?<br />
+<div class="column" style="float:left; font-size:80%; width:45%">
+
+<div id="orged86720" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online4.jpg" alt="reproducibility-graphic-online4.jpg" />
+</p>
+</div>
+</div>
+<div class="column" style="float:right; font-size:60%; width:55%">
+<ul>
+<li class="fragment appear">~70% fraud</li>
+<li class="fragment appear">&gt;80% poor design</li>
+<li class="fragment appear">Selective reporting &amp; pressure ~90%</li>
+
+</ul>
+</div>
+</section>
+<section id="slide-orgaee6506-split">
+</li>
+<li><a id="orgffc3fd8"></a>What to Change?<br />
+<div class="column" style="float:left; font-size:80%; width:45%">
+
+<div id="org063c6f2" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online5.jpg" alt="reproducibility-graphic-online5.jpg" />
+</p>
+</div>
+</div>
+<div class="column" style="float:right; font-size:60%; width:55%">
+<ul>
+<li class="fragment appear">~90% Better Statistical undersanding</li>
+<li class="fragment appear">Robust design</li>
+<li class="fragment appear">Mentoring</li>
+<li class="fragment appear">Better practices</li>
+
+</ul>
+</div>
+</section>
+<section id="slide-orgffc3fd8-split">
+</li>
+<li><a id="orgb3deb4a"></a>Did you?<br />
+<div class="column" style="float:left; font-size:80%; width:45%">
+
+<div id="org9febd05" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/reproducibility-graphic-online6.jpg" alt="reproducibility-graphic-online6.jpg" />
+</p>
+</div>
+</div>
+<div class="column" style="float:right; font-size:60%; width:55%">
+<ul>
+<li class="fragment appear">34% did take actions</li>
+<li class="fragment appear">33% last 5 yrs</li>
+<li class="fragment appear">7% more than 5 yrs</li>
+<li class="fragment appear">26% From the beginning</li>
+
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<section id="slide-org612a595">
+<h4 id="org612a595"><span class="section-number-4">2.1.4.</span> Replication Studies</h4>
+<ul>
+<li class="fragment appear"><b>Replicability crisis</b> is a serious issue in which many scientific studies are difficult to reproduce or replicate.</li>
+
+</ul>
+<div class="column" style="float:left; font-size:70%; width:49%">
+<ul>
+<li class="fragment appear"><b>Cancer research, only about 10–25%</b> of published studies could be validated or reproduced.</li>
+<li class="fragment appear">In <b>psychology only about 36%</b> were reproduced.</li>
+
+</ul>
+</div>
+<div class="column" style="float:right; font-size:70%; width:49%">
+<ul>
+<li class="fragment appear">Other
+<ul>
+<li class="fragment appear">Medicine.</li>
+<li class="fragment appear">Genetics.</li>
+<li class="fragment appear">Economics.</li>
+<li class="fragment appear"><b>Neuroscience</b>.</li>
+
+</ul></li>
+
+</ul>
+</div>
+</section>
+<section id="slide-org9533373">
+<h4 id="org9533373"><span class="section-number-4">2.1.5.</span> Reasons</h4>
+<ul>
+<li>Inappropriate practices of science,
+<ul>
+<li class="fragment appear">HARKing (Hypothesizing After the Results are Known)</li>
+<li class="fragment appear">p-hacking.</li>
+<li class="fragment appear">Selective reporting of positive results.</li>
+<li class="fragment appear">Poor research design.</li>
+<li class="fragment appear">Lack of raw data.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-orgcc65a3a">
+<h4 id="orgcc65a3a"><span class="section-number-4">2.1.6.</span> Pharma</h4>
+</section>
+<section id="slide-orgcc65a3a-split">
+<ul class="org-ul">
+<li><a id="org20be54e"></a>Bayer<br />
+<div id="orga692136" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/BayerRep.png" alt="BayerRep.png" />
+</p>
+</div>
+<ul>
+<li class="fragment appear">Oncology, woman health, cardiovascular.</li>
+<li class="fragment appear">65 % where not reproducible.</li>
+
+</ul>
+</section>
+<section id="slide-org20be54e-split">
+</li>
+<li><a id="org2960394"></a>Amgen<br />
+<div id="org728a572" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/AmgenPharma.png" alt="AmgenPharma.png" />
+</p>
+</div>
+<ul>
+<li class="fragment appear">Oncology and hematology</li>
+<li class="fragment appear">From 53 works, only 6 (11%) where confirmed.</li>
+
+</ul>
+</li>
+</ul>
+</section>
+<section id="slide-org2678f43">
+<h4 id="org2678f43"><span class="section-number-4">2.1.7.</span> Give me the Power</h4>
+<div class="outline-text-4" id="text-2-1-7">
+</div>
+<ul class="org-ul">
+<li><a id="org072630c"></a>Power Failure<br />
+<ul>
+<li class="fragment appear">Median statistical power is 18-21%</li>
+<li class="fragment appear">Neuroimaging studies 8%.</li>
+<li class="fragment appear">Animal models 18-31%.</li>
+
+</ul>
+
+<div id="org7c09b1b" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/NeuroPowerDist.png" alt="NeuroPowerDist.png" />
+</p>
+</div>
+</section>
+<section id="slide-org072630c-split">
+</li>
+<li><a id="orgabf5ae1"></a>Sample Size<br />
+<div id="org1630b6f" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/NeuroPowerTable.png" alt="NeuroPowerTable.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgabf5ae1-split">
+</li>
+<li><a id="orgd4ca088"></a>Power Effects<br />
+<div class="column" style="float:left; font-size:80%; width:45%">
+
+<div id="org340e1dd" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/NeuroPower.png" alt="NeuroPower.png" />
+</p>
+</div>
+</div>
+<div class="column" style="float:right; font-size:60%; width:55%">
+<ul>
+<li class="fragment appear"><b>Low Power</b>
+<ul>
+<li>Discovering effects that are genuinely true is low.</li>
+<li>Produce more false negatives than high-powered studies.</li>
+
+</ul></li>
+<li class="fragment appear"><b>Low PPV</b>
+<ul>
+<li>Positive Predictable Value</li>
+<li>PPV = ([1 – β] × R) ⁄ ([1− β] × R + α)</li>
+
+</ul></li>
+<li class="fragment appear"><b>Effect inflation</b>
+<ul>
+<li>Effect inflation <b>occur</b> whenever claims of <b>discovery</b> are based <b>on thresholds</b> of <b>statistical significance</b>
+<ul>
+<li>for example, p &lt; 0.05, or other selection filters.</li>
+
+</ul></li>
+
+</ul></li>
+
+</ul>
+
+</div>
+</section>
+<section id="slide-orgd4ca088-split">
+</li>
+<li><a id="orgdfd05a9"></a>Low power and other biases<br />
+<ul>
+<li class="fragment appear"><b>Low-powered</b> studies are <b>more likely</b> to provide a <b>wide range of estimates</b> of the magnitude of an <b>effect</b>.</li>
+<li class="fragment appear"><b>Publication bias</b>, <b>selective data analysis and selective reporting</b> are <b>more likely to affect low-powered studies</b>.</li>
+<li class="fragment appear"><b>Small studies</b> may be of <b>lower quality in other aspects of their design as well</b>.</li>
+
+</ul>
+</section>
+<section id="slide-orgdfd05a9-split">
+</li>
+<li><a id="orga3785ee"></a>More Power<br />
+<p>
+The probability that a research <b>finding</b> is indeed true <b>depends on:</b>
+</p>
+<ul>
+<li class="fragment appear">the <b>prior probability</b> of it being true (before doing the study),</li>
+<li class="fragment appear">the <b>statistical power</b> of the study,</li>
+<li class="fragment appear">and the <b>level of statistical significance</b>.</li>
+
+</ul>
+</section>
+<section id="slide-orga3785ee-split">
+</li>
+<li><a id="org9adbe75"></a>PPV<br />
+<ul>
+<li>After a research finding has been claimed based on achieving formal statistical significance, the <b>post-study probability that it is true</b> is the <b>positive predictive value</b>, PPV.</li>
+
+</ul>
+</section>
+<section id="slide-org9adbe75-split">
+</li>
+<li><a id="orgdcf9d7c"></a>Graphical Assessment<br />
+<div id="org211202d" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/PowerGraph.png" alt="PowerGraph.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgdcf9d7c-split">
+</li>
+<li><a id="orgdc20f03"></a>Power &amp; Bias<br />
+<div  style="float:center; font-size:80%; width:90%">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Finding</th>
+<th scope="col" class="org-left">True Relationship</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Yes</td>
+<td class="org-left">No</td>
+<td class="org-left">Total</td>
+</tr>
+
+<tr>
+<td class="org-left">Yes</td>
+<td class="org-left">\[c(1-\beta)R/(R+1)\]</td>
+<td class="org-left">\[c\alpha/(R+1)\]</td>
+<td class="org-left">\[c(R+\alpha-\beta R)/(R+1)\]</td>
+</tr>
+
+<tr>
+<td class="org-left">No</td>
+<td class="org-left">\[c\beta R/(R+1)\]</td>
+<td class="org-left">\[c(1-\alpha)/(R+1)\]</td>
+<td class="org-left">\[c(1-\alpha+\beta R)/(R+1)\]</td>
+</tr>
+
+<tr>
+<td class="org-left">Total</td>
+<td class="org-left">\[cR/(R+1)\]</td>
+<td class="org-left">\[c/(R+1)\]</td>
+<td class="org-left">\[c\]</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>(c=relationships are being probed in the field)</li>
+
+</ul>
+</div>
+</section>
+<section id="slide-orgdc20f03-split">
+</li>
+<li><a id="org0914a56"></a>Bias<br />
+<p>
+A combination of various factors that tend to produce research findings when they should not be produced including:
+</p>
+<ul>
+<li class="fragment appear">Design</li>
+<li class="fragment appear">Data</li>
+<li class="fragment appear">Analysis</li>
+<li class="fragment appear">Presentation factors</li>
+
+</ul>
+</section>
+<section id="slide-org0914a56-split">
+</li>
+<li><a id="org8452dbe"></a>Corollaries<br />
+<div class="column" style="float:left; font-size:80%; width:35%">
+
+<div id="org2a9d480" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/PPV.png" alt="PPV.png" />
+</p>
+</div>
+</div>
+<div class="column" style="float:right; font-size:55%; width:65%">
+<ol>
+<li class="fragment appear">The <b>smaller the studies</b> conducted in a scientific field, the <b>less likely</b> the research <b>findings are to be true</b>.</li>
+<li class="fragment appear">The <b>smaller the effect sizes</b> in a scientific field, the <b>less likely</b> the research <b>findings are to be true</b>.</li>
+<li class="fragment appear">The <b>greater the number and the lesser the selection of tested relationships</b> in a scientific field, the <b>less likely</b> the research <b>findings are to be true</b>.</li>
+<li class="fragment appear">The <b>greater the flexibility in designs</b>, definitions, outcomes, and analytical modes in a scientific field, the <b>less likely</b> the research <b>findings are to be true</b>.</li>
+<li class="fragment appear">The <b>greater the financial and other interests</b> and prejudices in a scientific field, the <b>less likely</b> the research <b>findings are to be true</b>.</li>
+<li class="fragment appear">The <b>hotter a scientific field</b> (with more scientific teams involved), the <b>less likely</b> the research <b>findings are to be true</b>.</li>
+
+</ol>
+</div>
+</section>
+<section id="slide-org8452dbe-split">
+</li>
+<li><a id="orgc259107"></a>Some Estimates<br />
+<div style="float:center; font-size:60%; width:95%">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">\(1-\beta\)</th>
+<th scope="col" class="org-right">R</th>
+<th scope="col" class="org-right">Bias, u</th>
+<th scope="col" class="org-left">Example</th>
+<th scope="col" class="org-right">PPV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0.80</td>
+<td class="org-right">1:1</td>
+<td class="org-right">0.10</td>
+<td class="org-left">Powered RCT with little bias a 1:1 pre-study odds</td>
+<td class="org-right">0.85</td>
+</tr>
+
+<tr>
+<td class="org-right">0.95</td>
+<td class="org-right">2:1</td>
+<td class="org-right">0.30</td>
+<td class="org-left">Confirmatory meta-analysis of good quality RCTs</td>
+<td class="org-right">0.85</td>
+</tr>
+
+<tr>
+<td class="org-right">0.80</td>
+<td class="org-right">1:10</td>
+<td class="org-right">0.30</td>
+<td class="org-left">Adequately powered exploratory epidemiological study</td>
+<td class="org-right">0.20</td>
+</tr>
+
+<tr>
+<td class="org-right">0.20</td>
+<td class="org-right">1:1000</td>
+<td class="org-right">0.80</td>
+<td class="org-left">Discovery oriented exploratory research with massive testing limited bias</td>
+<td class="org-right">0.0015</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Randomized control Trial</li>
+
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<section id="slide-orga315560">
+<h4 id="orga315560"><span class="section-number-4">2.1.8.</span> Erroneous Interactions</h4>
+<div class="outline-text-4" id="text-2-1-8">
+</div>
+<ul class="org-ul">
+<li><a id="org22f3427"></a>Even Best Families Top-ranking journals<br />
+<ul>
+<li>Behavioural, Systems Neuroscience.
+<ul>
+<li class="fragment appear">~50% correct comparison procedures for two experimental effects.</li>
+<li class="fragment appear">2/3 of erroneous cases it may have had serious consequences.</li>
+
+</ul></li>
+
+</ul>
+
+<div id="org29411a5" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/ErrInteractions1.png" alt="ErrInteractions1.png" />
+</p>
+</div>
+</section>
+<section id="slide-org22f3427-split">
+
+<h5>Even Best Families Top-ranking journals</h5>
+<ul>
+<li><p>
+Cellular and molecular neuroscience.
+</p>
+<ul>
+<li class="fragment appear">From 120 additional articles in, none uses correct statistical procedure to compare effect sizes.</li>
+<li class="fragment appear">25 used incorrect procedures to compared significance levels.</li>
+
+</ul>
+</section>
+<section id="slide-org59dff58-split"></li>
+
+</ul>
+</li>
+<li><a id="orgd30e094"></a>Comparison Errors<br />
+<div id="org713f795" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/ErrInteractions2.png" alt="ErrInteractions2.png" />
+</p>
+</div>
+<ul>
+<li>Tree situation where effect size comparison are incorrectly made.</li>
+
+</ul>
+</li>
+</ul>
+</section>
+<section id="slide-org5b24e23">
+<h4 id="org5b24e23"><span class="section-number-4">2.1.9.</span> DATA sets</h4>
+<div class="outline-text-4" id="text-2-1-9">
+</div>
+<ul class="org-ul">
+<li><a id="org7f83d4b"></a>Raw Data Withdraw<br />
+<div id="orgad758af" class="figure">
+<p><img src="../../../../Units/Statistics/img/SciSci/RawDataRequest.png" alt="RawDataRequest.png" />
+</p>
+</div>
+</section>
+<section id="slide-org7f83d4b-split">
+</li>
+<li><a id="orgc2de8d7"></a>Absence of Raw Data means absence of science<br /></li>
+<li><a id="org7d3624f"></a>Open Science Open Data<br /></li>
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org1dd4a91">
+<h2 id="org1dd4a91"><span class="section-number-2">3.</span> The Power</h2>
+<ul>
+<li class="fragment appear"><span style="color:green;">After a break?</span></li>
+
+</ul>
+</section>
+<section id="slide-org61dfbf2">
+<h3 id="org61dfbf2"><span class="section-number-3">3.1.</span> Objectives</h3>
+<ul>
+<li class="fragment appear">Probability &amp; Statistics</li>
+<li class="fragment appear">Descriptive/Exploratory</li>
+<li class="fragment appear">Inference</li>
+<li class="fragment appear">Hypothesis Testing</li>
+<li class="fragment appear">Some Recommendations for Biology</li>
+
+</ul>
+</section>
+<section id="slide-org62e0469">
+<h3 id="org62e0469"><span class="section-number-3">3.2.</span> Intro</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+</section>
+<section id="slide-orgb502fa8">
+<h4 id="orgb502fa8"><span class="section-number-4">3.2.1.</span> Basic Definition</h4>
+<ul>
+<li class="fragment appear"><span style="color:green;">Statistical inference</span> is the process of <b>drawing formal conclusions from data</b>.</li>
+
+<li class="fragment appear"><span style="color:green;">Statistical inference</span> occurs where one wants to infer facts about a <b>population</b> using noisy statistical data <b>where uncertainty</b> must taken into account.</li>
+
+<li class="fragment appear"><span style="color:green;">Statistical inference</span> <b>requires assessment of assumptions and tools</b> and <b>thinking how to draw conclusions</b> from data.</li>
+
+</ul>
+
+</section>
+<section id="slide-org92d94dc">
+<h4 id="org92d94dc"><span class="section-number-4">3.2.2.</span> Some Inference Goals</h4>
+<ul>
+<li class="fragment appear"><b>Benchmarking</b>
+<ul>
+<li>Effectiveness of a treatment</li>
+
+</ul></li>
+
+<li class="fragment appear"><b>Quantify</b>
+<ul>
+<li>Proportion of voting</li>
+
+</ul></li>
+
+<li class="fragment appear"><b>Relationship</b>
+<ul>
+<li>Slope of Hoocke&rsquo;s law</li>
+
+</ul></li>
+
+<li class="fragment appear"><b>Impact</b>
+<ul>
+<li>Confinements</li>
+
+</ul></li>
+
+<li class="fragment appear"><b>Probability</b>
+<ul>
+<li>Raining tomorrow</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org32b54ca">
+<h4 id="org32b54ca"><span class="section-number-4">3.2.3.</span> Some tools in Inference</h4>
+<ul>
+<li class="fragment appear"><b><i>Randomization</i></b>.
+<ul>
+<li>Unobserved variables may confound inferences of interest.</li>
+
+</ul></li>
+
+<li class="fragment appear"><b><i>Random sampling</i></b>.
+<ul>
+<li>Data representative of a population.</li>
+
+</ul></li>
+
+<li class="fragment appear"><b><i>Sampling models</i></b>.
+<ul>
+<li>Creating a model for the sampling process.</li>
+<li>Independent Identically Distributed (i.i.d).</li>
+
+</ul></li>
+
+<li class="fragment appear"><b><i>Hypothesis testing</i></b>.
+<ul>
+<li>Decision making under uncertainty.</li>
+
+</ul></li>
+
+<li class="fragment appear"><b><i>Confidence intervals</i></b>.
+<ul>
+<li>Quantify uncertainty in estimation.</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org32b54ca-split">
+<ul>
+<li class="fragment appear"><b><i>Probability Models</i></b>.
+<ul>
+<li>Formal connection between the data and population of interest.</li>
+
+</ul></li>
+
+<li class="fragment appear"><b><i>Study Design</i></b>.
+<ul>
+<li>Experiment to minimize biases and variability.</li>
+
+</ul></li>
+
+<li class="fragment appear"><b><i>Nonparametric bootstrapping</i></b>.
+<ul>
+<li>Using data to create inference with minimal probability model assumptions.</li>
+
+</ul></li>
+
+<li class="fragment appear"><b><i>Permutation</i></b>.
+<ul>
+<li>Randomization and exchangeability testing to perform inferences.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org4c76ff2">
+<h4 id="org4c76ff2"><span class="section-number-4">3.2.4.</span> Schools Styles</h4>
+<ul>
+<li class="fragment appear"><b><span style="color:green;">Frequentist</span> Probability &amp; Inference</b>
+<ul>
+<li class="fragment appear"><b>Long run proportion</b> of times an event occurs in <b>independent, identically distributed repetitions</b>.</li>
+<li class="fragment appear">Interpretations of <b>probabilities to control error rates</b>.</li>
+<li class="fragment appear"><b>Given my data</b> controlling the <b>long run proportion</b> of mistakes I make <b>at a tolerable level</b>.</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org4c76ff2-split">
+<ul>
+<li class="fragment appear"><b><span style="color:green;">Bayesian</span> Probability &amp; Inference</b>
+<ul>
+<li class="fragment appear">Estimate or <b>calculate of beliefs</b>, which <b>follow certain rules</b>.</li>
+<li class="fragment appear"><b>Inference</b> is performed by <b>Bayesian probability representation of beliefs</b>.</li>
+<li class="fragment appear"><b>Subjective beliefs</b> and the <b>objective information</b> from the data <b>to infer</b>.</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgcfdae96">
+<h2 id="orgcfdae96"><span class="section-number-2">4.</span> Probability, Expectations &amp; Variance</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-org8781917">
+<h3 id="org8781917"><span class="section-number-3">4.1.</span> Probability</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+</section>
+<section id="slide-org7e31ad0">
+<h4 id="org7e31ad0"><span class="section-number-4">4.1.1.</span> Probability Definition</h4>
+<p class="fragment (appear)">
+Given a random variable (experiment; say rolling a die) a <b>probability measure</b> is a population quantity that <i>summarizes the randomness</i>.
+</p>
+
+<ul>
+<li class="fragment appear"><b>number between 0 and 1</b>.</li>
+<li class="fragment appear"><b>probability that something occurs is 1</b> (the die must be rolled) and</li>
+<li class="fragment appear">The probability of the union of <b>any two sets of outcomes that have nothing in common</b> (mutually exclusive) is the <b>sum of their respective probabilities</b>.</li>
+
+</ul>
+</section>
+<section id="slide-orgb94f852">
+<h4 id="orgb94f852"><span class="section-number-4">4.1.2.</span> Rules probability must follow</h4>
+<p>
+The Russian mathematician <a href="https://en.wikipedia.org/wiki/Andrey_Kolmogorov">Andrey Nikolaevich Kolmogorov</a> formalized these rules.
+</p>
+<ul>
+<li class="fragment appear">The probability that <b>nothing occurs is 0</b></li>
+<li class="fragment appear">The probability that <b>something occurs is 1</b></li>
+<li class="fragment appear">The <b>probability of something is</b> 1 minus the probability that the opposite occurs</li>
+<li class="fragment appear">The <b>probability of at least one of or more things</b> that can not simultaneously occur, <b>mutually exclusive</b>, is the <b>sum of their respective probabilities</b>.</li>
+
+</ul>
+</section>
+<section id="slide-orgb94f852-split">
+<ul class="org-ul">
+<li><a id="org6d98946"></a><b>More interestingly</b><br />
+<ul>
+<li class="fragment appear">If an event <b>&ldquo;A&rdquo; implies the occurrence of event &ldquo;B&rdquo;</b>, then the probability of <b>&ldquo;A&rdquo; occurring is less than the probability that &ldquo;B&rdquo; occurs</b>.</li>
+<li class="fragment appear">For <b>any two events the probability that at least one occurs</b> is the <b>sum of their probabilities minus their intersection</b>.</li>
+
+</ul>
+</li>
+</ul>
+</section>
+<section id="slide-org33de8e7">
+<h4 id="org33de8e7"><span class="section-number-4">4.1.3.</span> Simple Example</h4>
+<ul>
+<li class="fragment appear">Event/Condition <b>X</b> with incidence of <b>3%</b> in the population</li>
+<li class="fragment appear">Whereas <b>10%</b> of the population with Event/Condition <b>Y</b>.</li>
+<li class="fragment appear">Does this imply that 13% of people will have at least one these Event/Condition?
+<ul>
+<li>Answer: <b>If the events can simultaneously occur</b>; they are not mutually exclusive so <b>NO</b>.</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org33de8e7-split">
+<ul>
+<li><b>lets:</b></li>
+
+</ul>
+
+<div>
+\begin{eqnarray*}
+    A_1 & = & \{\mbox{Event X}\} \\
+    A_2 & = & \{\mbox{Event Y}\}
+\end{eqnarray*}
+
+</div>
+
+<ul>
+<li><b>Then</b></li>
+
+</ul>
+
+<div>
+\begin{eqnarray*}
+    P(A_1 \cup A_2 ) & = & P(A_1) + P(A_2) - P(A_1 \cap A_2) \\
+   & = & 0.13 - \mbox{Probability of having both}
+\end{eqnarray*}
+
+</div>
+
+<ul>
+<li>Likely, some fraction of the population has both.</li>
+
+</ul>
+
+</section>
+<section id="slide-org9bdaca0">
+<h4 id="org9bdaca0"><span class="section-number-4">4.1.4.</span> Random variables</h4>
+<ul>
+<li class="fragment appear">A <b>random variable</b> is a numerical outcome of an experiment.</li>
+<li class="fragment appear">The random variables come in <b>two varieties</b>, <b>discrete</b> or <b>continuous</b>.
+<ul>
+<li class="fragment appear"><b>Discrete</b> random variable take on only a <b>countable number of possibilities</b>; the probability takes specific values.</li>
+<li class="fragment appear"><b>Continuous</b> random variable can take <b>any value on the real line</b>, or some subset; the probability they take within some range.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org0b031ff">
+<h4 id="org0b031ff"><span class="section-number-4">4.1.5.</span> Quantiles</h4>
+<ul>
+<li class="fragment appear"><b>Famous sample quantiles</b>.
+<ul>
+<li>The 95th percentile on an exam, 95% of people scored worse than 5% scored better.</li>
+
+</ul></li>
+<li class="fragment appear"><span style="color:green;">Population analogs</span>.</li>
+
+</ul>
+</section>
+<section id="slide-org0b031ff-split">
+<ul class="org-ul">
+<li><a id="orgf6a667e"></a><b>Definition</b><br />
+<ul>
+<li class="fragment appear">The  \(\alpha^{th}\) <b><b>quantile</b></b> of a distribution with distribution function \(F\) is the point \(x_\alpha\) so that
+\[F(x_\alpha) = \alpha\]</li>
+<li class="fragment appear">A <b><b>percentile</b></b> is simply a quantile with \(\alpha\) expressed as a percent</li>
+<li class="fragment appear">The <b><b>median</b></b> is the \(50^{th}\) percentile</li>
+
+</ul>
+</section>
+<section id="slide-orgf6a667e-split">
+</li>
+<li><a id="org32f277c"></a><b>For example</b><br />
+<ul>
+<li class="fragment appear">The <span style="color:green;">\(75^{th}\) percentile</span> of a distribution is the point so that:
+<ul>
+<li class="fragment appear">The probability, that a random variable from the population, <b>is less is 75%</b>.</li>
+<li class="fragment appear">The probability, that a random variable from the population, <b>is more is 25%</b>.</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org32f277c-split">
+</li>
+</ul>
+
+</section>
+<section id="slide-org0528766">
+<h4 id="org0528766"><span class="section-number-4">4.1.6.</span> Conditional Probability</h4>
+<ul class="org-ul">
+<li><a id="org126a355"></a><b>Motivating example</b><br />
+<ul>
+<li class="fragment appear"><b>The probability of getting</b> a one when rolling a (standard) die is usually assumed to be one sixth.</li>
+<li class="fragment appear">Suppose you were given the <b>extra information</b> that the <span style="color:green;">die roll was an odd number</span> (hence 1, 3 or 5).</li>
+<li class="fragment appear"><b>Conditional on this new information</b>, the probability of a one is <span style="color:green;">now one third</span>.</li>
+
+</ul>
+
+</section>
+<section id="slide-org126a355-split">
+</li>
+<li><a id="org2b9b6f8"></a><b>Definition</b><br />
+<ul>
+<li class="fragment appear">Let \(B\) be an event so that \(P(B) > 0\)
+<ul>
+<li class="fragment appear">Then the conditional <b>probability of an event \(A\) given that \(B\) has occurred</b> is
+\(P(A ~|~ B) = \frac{P(A \cap B)}{P(B)}\)</li>
+<li class="fragment appear">Notice that <b>if</b> <span style="color:green;">\(A\) and \(B\)</span> <b>are independent</b>, then
+\(P(A ~|~ B) = \frac{P(A) P(B)}{P(B)} = P(A)\)</li>
+<li class="fragment appear">\(\cap =\mbox{ intersection}\)</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org2b9b6f8-split">
+</li>
+<li><a id="orgd4a5f02"></a><b>Little Example</b><br />
+<ul>
+<li class="fragment appear">Consider our die roll example, \(P(\mbox{one given that roll is odd})=P^*\).
+<ul>
+<li><p>
+\(A = \{1\}\) and \(B = \{1, 3, 5\}\). Then
+</p>
+<div>
+\begin{eqnarray*}
+P^* & = & P(A ~|~ B) \\ \\
+& = & \frac{P(A \cap B)}{P(B)} \\ \\
+& = & \frac{P(A)}{P(B)} = \frac{1/6}{3/6} = \frac{1}{3}
+\end{eqnarray*}
+
+</div></li>
+
+</ul></li>
+
+</ul>
+</li>
+</ul>
+
+</section>
+<section id="slide-orgdb5aef3">
+<h4 id="orgdb5aef3"><span class="section-number-4">4.1.7.</span> Bayes&rsquo; rule</h4>
+<ul>
+<li class="fragment appear">Baye&rsquo;s rule allows us to <b>reverse the conditioning</b> set provided that we <span style="color:green;">know some marginal probabilities</span>.
+<ul>
+<li>\[ P(B ~|~ A) = \frac{P(A ~|~ B) P(B)}{P(A ~|~ B) P(B) + P(A ~|~ \neg B)P(\neg B)}\]</li>
+
+<li>Where \[P(\neg B)\] is the <span style="color:green;">initial degree of belief in not-B (B is false)</span>, and \(P(\neg B)=1-P(B)\)</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orgdb5aef3-split">
+<ul class="org-ul">
+<li><a id="orgcf6f2d2"></a><b>Diagnostic tests</b><br />
+<ul>
+<li class="fragment appear">Let \(+\) and \(-\) be the events that the result of a diagnostic test is positive or negative respectively.</li>
+<li class="fragment appear">Let \(D\) and \(D^c\) be the event that the subject of the test has or does not have the disease respectively.</li>
+<li class="fragment appear">The <b><b>sensitivity</b></b> is the probability that the test is positive given that the subject actually has the disease, \(P(+ ~|~ D)\).</li>
+<li class="fragment appear">The <b><b>specificity</b></b> is the probability that the test is negative given that the subject does not have the disease, \(P(- ~|~ D^c)\).</li>
+
+</ul>
+</section>
+<section id="slide-orgcf6f2d2-split">
+</li>
+<li><a id="org2b7fff2"></a><b>More definitions</b><br />
+<ul>
+<li class="fragment appear">The <b><b>positive predictive value</b></b> is the probability that the subject has the  disease given that the test is positive, \(P(D ~|~ +)\)</li>
+<li class="fragment appear">The <b><b>negative predictive value</b></b> is the probability that the subject does not have the disease given that the test is negative, \(P(D^c ~|~ -)\)</li>
+<li class="fragment appear">The <b><b>prevalence of the disease</b></b> is the marginal probability of disease, \(P(D)\)</li>
+
+</ul>
+</li>
+</ul>
+</section>
+<section id="slide-org5d9ceb4">
+<h4 id="org5d9ceb4"><span class="section-number-4">4.1.8.</span> Using Bayes&rsquo; formula</h4>
+<div class="fragment (appear)">
+\begin{eqnarray*}
+P(D | +) & = &\frac{P(+|D)P(D)}{P(+|D)P(D) + P(+|D^c)P(D^c)}\\ \\
+& = & \frac{P(+|D)P(D)}{P(+|D)P(D) + \{1-P(-|D^c)\}\{1 - P(D)\}} \\ \\
+& = & \frac{.997\times .001}{.997 \times .001 + .015 \times .999} = 0.062
+\end{eqnarray*}
+
+</div>
+</section>
+<section id="slide-org5d9ceb4-split">
+<ul>
+<li class="fragment appear">Then,
+<ul>
+<li><b>A positive test</b> result only suggests a <b>6% probability</b> that the subject has the <b>disease</b>.</li>
+<li>The <b>positive predictive value is 6%</b> for this test.</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org864de31">
+<h4 id="org864de31"><span class="section-number-4">4.1.9.</span> Likelihood ratios, using Bayes rule</h4>
+<p class="fragment (appear)">
+\[
+  P(D|+) = \frac{P(+|D)P(D)}{P(+|D)P(D) + P(+|D^c)P(D^c)}
+  \]
+\[P(D^c|+) = \frac{P(+|D^c)P(D^c)}{P(+|D)P(D) + P(+|D^c)P(D^c)}\]
+</p>
+</section>
+<section id="slide-org864de31-split">
+<ul>
+<li class="fragment appear"><b>Therefore</b>
+<ul>
+<li>\[\frac{P(D|+)}{P(D^c|+)} = \frac{P(+|D)}{P(+|D^c)}\times \frac{P(D)}{P(D^c)}\]
+ie \[\mbox{post-test odds of }D = DLR_+\times\mbox{pre-test odds of }D\]
+<ul>
+<li class="fragment appear">DLR, <b>Diagnostic Likelihood Ratio</b> test</li>
+<li class="fragment appear">Similarly, \(DLR_-\) relates the decrease in the odds of the disease after a negative test result to the odds of disease prior to the test.</li>
+
+</ul></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orga1a046f">
+<h3 id="orga1a046f"><span class="section-number-3">4.2.</span> Expectations</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+</section>
+<section id="slide-org5e93f44">
+<h4 id="org5e93f44"><span class="section-number-4">4.2.1.</span> Expected values</h4>
+<ul>
+<li class="fragment appear">Expected values are useful for <b>characterizing a distributions</b>.</li>
+<li class="fragment appear">The <b>mean</b> is a characterization of <b>its center</b>.</li>
+<li class="fragment appear">The <b>variance and standard deviation</b> are characterizations of how <b>spread out</b> it is.</li>
+<li class="fragment appear">Our <b>sample expected values</b> (the sample mean and variance) will <b>estimate the population</b> versions.</li>
+
+</ul>
+
+</section>
+<section id="slide-org941591e">
+<h4 id="org941591e"><span class="section-number-4">4.2.2.</span> The population mean</h4>
+<ul>
+<li class="fragment appear">The <b><b>expected value</b></b> or <b><b>mean</b></b> of a random variable is the center of its distribution</li>
+<li class="fragment appear">For <span style="color:green;">discrete random variable \(X\) with PMF \(p(x)\)</span>, it is defined as follows
+\[
+    E[X] = \sum_x xp(x).
+    \]
+where the <b>sum is taken over the possible values of \(x\)</b></li>
+<li class="fragment appear"><span style="color:green;">\(E[X]\) represents the center of mass</span> of a collection of <span style="color:green;">locations and weights, \(\{x, p(x)\}\)</span></li>
+
+</ul>
+
+</section>
+<section id="slide-org8867604">
+<h4 id="org8867604"><span class="section-number-4">4.2.3.</span> The sample mean</h4>
+<ul>
+<li class="fragment appear">The <span style="color:green;">ample mean estimates this population mean</span>.</li>
+<li class="fragment appear">The <b>center of mass of the data is the empirical mean</b>.</li>
+
+</ul>
+<p>
+\[
+\bar X = \sum_{i=1}^n x_i p(x_i)
+\]
+where \(p(x_i) = 1/n\)
+</p>
+
+</section>
+<section id="slide-org1b642b9">
+<h4 id="org1b642b9"><span class="section-number-4">4.2.4.</span> Example</h4>
+<div class="outline-text-4" id="text-4-2-4">
+</div>
+<ul class="org-ul">
+<li><a id="orgfdbc003"></a>Find the center of mass of the bars<br />
+<div id="org85eefe2" class="figure">
+<p><img src="galton.png" alt="galton.png" />
+</p>
+</div>
+</li>
+</ul>
+
+</section>
+<section id="slide-org19f3af7">
+<h4 id="org19f3af7"><span class="section-number-4">4.2.5.</span> What about a biased coin?</h4>
+<ul>
+<li class="fragment appear">Suppose that a random variable, \(X\), is so that</li>
+<li class="fragment appear">\(P(X=1) = p\) and \(P(X=0) = (1 - p)\)</li>
+<li class="fragment appear">(This is a biased coin when \(p\neq 0.5\))</li>
+<li class="fragment appear">What is its expected value?</li>
+<li class="fragment appear">\[E[X] = 0 * (1 - p) + 1 * p = p\]</li>
+
+</ul>
+</section>
+<section id="slide-orgec42cf3">
+<h4 id="orgec42cf3"><span class="section-number-4">4.2.6.</span> Continuous random variables</h4>
+<ul>
+<li>For a continuous random variable, \(X\), with density, \(f\), the expected value is again exactly the center of mass of the density.</li>
+
+</ul>
+</section>
+<section id="slide-orgde3f1a7">
+<h4 id="orgde3f1a7"><span class="section-number-4">4.2.7.</span> Summary of Expected Values</h4>
+<ul>
+<li class="fragment appear">Expected values are <b>properties of distributions</b>.</li>
+<li class="fragment appear">The <b>average of random variables is</b> itself <b>a random variable</b> and its associated distribution <b>has an expected value</b>.</li>
+<li class="fragment appear">The <b>center</b> of this distribution is <b>the same as that of the original distribution</b>.</li>
+<li class="fragment appear">Therefore, the expected value of the <b><b>sample mean</b></b> is the <b>population mean</b> trying to estimate.</li>
+<li class="fragment appear">When the <b>expected value of an estimator is what its trying to estimate</b>, we say that the estimator is <b><b>unbiased</b></b></li>
+
+</ul>
+</section>
+<section id="slide-orgb86d3b9">
+<h3 id="orgb86d3b9"><span class="section-number-3">4.3.</span> Variance</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+</section>
+<section id="slide-orgae24e28">
+<h4 id="orgae24e28"><span class="section-number-4">4.3.1.</span> The variance</h4>
+<ul>
+<li class="fragment appear">The variance of a random variable is a measure of <b>spread</b></li>
+<li class="fragment appear">If \(X\) is a random variable with mean \(\mu\), the variance of \(X\) is defined as
+<ul>
+<li>\(Var(X) = E[(X - \mu)^2] = E[X^2] - E[X]^2\)</li>
+
+</ul></li>
+<li class="fragment appear">The expected (squared) distance from the mean</li>
+<li class="fragment appear">Densities with a higher variance are more spread out than densities with a lower variance</li>
+<li class="fragment appear">The square root of the variance is called the <b><b>standard deviation</b></b></li>
+<li class="fragment appear">The standard deviation has the same units as \(X\)</li>
+
+</ul>
+<p>
+&#x2014;
+</p>
+
+</section>
+<section id="slide-orgd75e134">
+<h4 id="orgd75e134"><span class="section-number-4">4.3.2.</span> Examples Variance</h4>
+<div class="outline-text-4" id="text-4-3-2">
+</div>
+<ul class="org-ul">
+<li><a id="org5b7e628"></a>Example 1<br />
+<ul>
+<li>What&rsquo;s the variance from the result of a toss of a die?
+
+<ul>
+<li>\(E[X] = 3.5\)</li>
+<li>\(E[X^2] = 1 ^ 2 \times \frac{1}{6} + 2 ^ 2 \times \frac{1}{6} + 3 ^ 2 \times \frac{1}{6} + \\ 4 ^ 2 \times \frac{1}{6} + 5 ^ 2 \times \frac{1}{6} + 6 ^ 2 \times \frac{1}{6} = 15.17\)</li>
+
+</ul></li>
+
+<li>\(Var(X) = E[X^2] - E[X]^2 \approx 2.92\)</li>
+
+</ul>
+
+<p>
+&#x2014;
+</p>
+</section>
+<section id="slide-org5b7e628-split">
+</li>
+<li><a id="org2302ada"></a>Example 2<br />
+<ul>
+<li>What&rsquo;s the variance from the result of the toss of a coin with probability of heads (1) of \(p\)?
+
+<ul>
+<li>\(E[X] = 0 \times (1 - p) + 1 \times p = p\)</li>
+<li>\(E[X^2] = E[X] = p\)</li>
+
+</ul></li>
+
+</ul>
+
+<p>
+\[Var(X) = E[X^2] - E[X]^2 = p - p^2 = p(1 - p)\]
+&#x2014;
+</p>
+</li>
+</ul>
+</section>
+<section id="slide-org99021c0">
+<h4 id="org99021c0"><span class="section-number-4">4.3.3.</span> The sample variance</h4>
+<ul>
+<li class="fragment appear">The sample variance is
+<ul>
+<li class="fragment appear">\(S^2 = \frac{\sum_{i=1} (X_i - \bar X)^2}{n-1}\)</li>
+<li class="fragment appear">(almost, but not quite, the average squared deviation from the sample mean)</li>
+
+</ul></li>
+<li class="fragment appear">It is also a random variable
+<ul>
+<li class="fragment appear">It has an associate population distribution</li>
+<li class="fragment appear">Its expected value is the population variance</li>
+<li class="fragment appear">Its distribution gets more concentrated around the population variance with more data</li>
+
+</ul></li>
+<li class="fragment appear">Its square root is the sample standard deviation</li>
+
+</ul>
+
+
+<p>
+&#x2014;
+</p>
+</section>
+<section id="slide-orgdd33667">
+<h4 id="orgdd33667"><span class="section-number-4">4.3.4.</span> Recall the mean</h4>
+<ul>
+<li class="fragment appear">Recall that the average of random sample from a population is itself a random variable</li>
+<li class="fragment appear">We know that this distribution is centered around the population mean, \(E[\bar X] = \mu\)</li>
+<li class="fragment appear">We also know what its variance is \(Var(\bar X) = \sigma^2 / n\)</li>
+<li class="fragment appear">This is very useful, since we don&rsquo;t have repeat sample means to get its variance; now we know how it relates to the population variance</li>
+<li class="fragment appear">We call the standard deviation of a statistic a standard error</li>
+
+</ul>
+
+<p>
+&#x2014;
+</p>
+</section>
+<section id="slide-orgab32888">
+<h4 id="orgab32888"><span class="section-number-4">4.3.5.</span> To summarize</h4>
+<ul>
+<li class="fragment appear">The sample variance, \(S^2\), estimates the population variance, \(\sigma^2\)</li>
+<li class="fragment appear">The distribution of the sample variance is centered around \(\sigma^2\)</li>
+<li class="fragment appear">The variance of the sample mean is \(\sigma^2 / n\)
+<ul>
+<li>Its logical estimate is \(s^2 / n\)</li>
+<li>The logical estimate of the standard error is \(S / \sqrt{n}\)</li>
+
+</ul></li>
+<li class="fragment appear">\(S\), the standard deviation, talks about how variable the population is</li>
+<li class="fragment appear">\(S/\sqrt{n}\), the standard error, talks about how variable averages of random samples of size \(n\) from the population are</li>
+
+</ul>
+
+<p>
+&#x2014;
+</p>
+</section>
+<section id="slide-orgbff0968">
+<h4 id="orgbff0968"><span class="section-number-4">4.3.6.</span> Summarizing what we know about variances</h4>
+<ul>
+<li class="fragment appear">The <i>sample variance</i> estimates the <b>population variance</b></li>
+<li class="fragment appear">The distribution of the <i>sample variance</i> is centered at what its estimating</li>
+<li class="fragment appear">It gets more <b>concentrated</b> around the population variance with <i>larger sample sizes</i></li>
+<li class="fragment appear">The variance of the sample mean is the population variance divided by \(n\)
+<ul>
+<li>The square root is the standard error</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgd77a310">
+<h2 id="orgd77a310"><span class="section-number-2">5.</span> Intervals, Testing &amp; p-Values</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+</section>
+<section id="slide-orgbb061dd">
+<h3 id="orgbb061dd"><span class="section-number-3">5.1.</span> Hypothesis Testing</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+</section>
+<section id="slide-orgfeec708">
+<h4 id="orgfeec708"><span class="section-number-4">5.1.1.</span> Hypothesis testing</h4>
+<ul>
+<li class="fragment appear"><b>Hypothesis testing</b> is concerned with <span style="color:green;">making decisions using data</span>.</li>
+<li class="fragment appear"><b>A null hypothesis</b> is specified that <span style="color:green;">represents the status quo</span>,
+usually <b>labeled \(H_0\)</b>.</li>
+<li class="fragment appear">The <b>null hypothesis</b> is <span style="color:green;">assumed true</span> and statistical <b>evidence is required
+to reject it</b> in favor of a research or alternative hypothesis.</li>
+
+</ul>
+</section>
+<section id="slide-org017f0c6">
+<h4 id="org017f0c6"><span class="section-number-4">5.1.2.</span> Hypothesis testing decision</h4>
+<ul>
+<li class="fragment appear">The alternative hypotheses are typically of the form \(<\), \(>\) or \(\neq\)</li>
+<li class="fragment appear">Note that there are <b>four possible outcomes</b> of our <span style="color:green;">statistical decision</span> process</li>
+
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" class="fragment (appear">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Truth</th>
+<th scope="col" class="org-left">Decide</th>
+<th scope="col" class="org-left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(H_0\)</td>
+<td class="org-left">\(H_0\)</td>
+<td class="org-left">Correctly accept null</td>
+</tr>
+
+<tr>
+<td class="org-left">\(H_0\)</td>
+<td class="org-left">\(H_a\)</td>
+<td class="org-left">Type I error</td>
+</tr>
+
+<tr>
+<td class="org-left">\(H_a\)</td>
+<td class="org-left">\(H_a\)</td>
+<td class="org-left">Correctly reject null</td>
+</tr>
+
+<tr>
+<td class="org-left">\(H_a\)</td>
+<td class="org-left">\(H_0\)</td>
+<td class="org-left">Type II error</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-orgea2dfab">
+<h4 id="orgea2dfab"><span class="section-number-4">5.1.3.</span> General rules</h4>
+<ul>
+<li class="fragment appear">The \(Z\) test for \(H_0:\mu = \mu_0\), versus
+<ul>
+<li>\(H_1: \mu < \mu_0\)</li>
+<li>\(H_2: \mu \neq \mu_0\)</li>
+<li>\(H_3: \mu > \mu_0\)</li>
+
+</ul></li>
+<li class="fragment appear">Test statistic \(TS = \frac{\bar{X} - \mu_0}{S / \sqrt{n}}\)</li>
+<li class="fragment appear">Reject the null hypothesis when
+<ul>
+<li>\(TS \leq Z_{\alpha} = -Z_{1 - \alpha}\)</li>
+<li>\(|TS| \geq Z_{1 - \alpha / 2}\)</li>
+<li>\(TS \geq Z_{1 - \alpha}\)</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org1a3ff20">
+<h4 id="org1a3ff20"><span class="section-number-4">5.1.4.</span> Notes</h4>
+<ul>
+<li>We:
+<ul>
+<li class="fragment appear">Fix <span style="color:green;">\(\alpha\) to be low</span>, so if we reject \(H_0\): our model is wrong or there is a <b>low probability that we have made an error</b>.</li>
+<li class="fragment appear"><b>Not fixed the probability of a type II error</b>, <span style="color:green;">\(\beta\)</span>; we tend to say <i>Fail to reject \(H_0\)</i> rather than accepting \(H_0\).</li>
+<li class="fragment appear"><b>Statistical significance</b> is no the same as <b>Scientific significance</b>.</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org4d22e07">
+<h4 id="org4d22e07"><span class="section-number-4">5.1.5.</span> Connections with confidence intervals</h4>
+<ul>
+<li class="fragment appear">Consider testing \(H_0: \mu = \mu_0\) versus \(H_a: \mu \neq \mu_0\).</li>
+<li class="fragment appear">Take the set of all possible values for which you fail to reject \(H_0\), this set is a \((1-\alpha)100\%\) confidence interval for \(\mu\).</li>
+<li class="fragment appear">The same works in reverse; if a \((1-\alpha)100\%\) interval contains \(\mu_0\), then we <b>fail  to</b> reject \(H_0\).</li>
+
+</ul>
+</section>
+<section id="slide-org9a74d4f">
+<h3 id="org9a74d4f"><span class="section-number-3">5.2.</span> p-Values</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+</section>
+<section id="slide-org84c2481">
+<h4 id="org84c2481"><span class="section-number-4">5.2.1.</span> P-values</h4>
+<ul>
+<li class="fragment appear">Most common measure of statistical significance.</li>
+<li class="fragment appear">Their ubiquity, along with concern over their interpretation and use makes them controversial among statisticians.</li>
+
+</ul>
+</section>
+<section id="slide-org07fe2e7">
+<h4 id="org07fe2e7"><span class="section-number-4">5.2.2.</span> What is a P-value?</h4>
+<p>
+Idea: Suppose nothing is going on - how unusual is it to see the estimate we got?
+Approach:
+</p>
+<ol>
+<li class="fragment appear">Define the hypothetical distribution of a data summary (statistic) when &ldquo;nothing is going on&rdquo; (null hypothesis)</li>
+<li class="fragment appear">Calculate the summary/statistic with the data we have (test statistic)</li>
+<li class="fragment appear">Compare what we calculated to our hypothetical distribution and see if the value is &ldquo;extreme&rdquo; (p-value)</li>
+
+</ol>
+</section>
+<section id="slide-org8efa93e">
+<h4 id="org8efa93e"><span class="section-number-4">5.2.3.</span> P-values</h4>
+<ul>
+<li class="fragment appear">The P-value is the probability under the null hypothesis of obtaining evidence as extreme or more extreme than that obtained</li>
+<li class="fragment appear">If the P-value is small, then either \(H_0\) is true and we have observed a rare event or \(H_0\) is false</li>
+<li class="fragment appear">Suppose that you get a \(T\) statistic of \(2.5\) for 15 df testing \(H_0:\mu = \mu_0\) versus \(H_a : \mu > \mu_0\).
+<ul>
+<li><p>
+What&rsquo;s the probability of getting a \(T\) statistic as large as \(2.5\)?
+</p></li>
+
+</ul></li>
+
+</ul>
+<ul>
+<li class="fragment appear">Therefore, the probability of seeing evidence as extreme or more extreme than that actually obtained under \(H_0\) is 0.0123</li>
+
+</ul>
+<p>
+&#x2014;
+</p>
+</section>
+<section id="slide-org4b8c3c0">
+<h4 id="org4b8c3c0"><span class="section-number-4">5.2.4.</span> The attained significance level</h4>
+<ul>
+<li class="fragment appear">Our test statistic was \(2\) for \(H_0 : \mu_0  = 30\) versus \(H_a:\mu > 30\).</li>
+<li class="fragment appear">Notice that we rejected the one sided test when \(\alpha = 0.05\), would we reject if \(\alpha = 0.01\), how about \(0.001\)?</li>
+<li class="fragment appear">The smallest value for alpha that you still reject the null hypothesis is called the <b>attained significance level</b></li>
+<li class="fragment appear">This is equivalent, but philosophically a little different from, the <b>P-value</b></li>
+
+</ul>
+<p>
+&#x2014;
+</p>
+</section>
+<section id="slide-orge0bf8d3">
+<h4 id="orge0bf8d3"><span class="section-number-4">5.2.5.</span> Notes</h4>
+<ul>
+<li class="fragment appear">By reporting a <b>p-value</b> the reader can perform the hypothesis test at whatever <b>\(\alpha\) level</b>.</li>
+<li class="fragment appear">If the <b>p-value</b> is <b>less than \(\alpha\)</b> you <span style="color:green;">reject the null hypothesis</span>.</li>
+<li class="fragment appear">For <b>two sided hypothesis test</b>, <span style="color:green;">double the smaller of the two one sided hypothesis test P-values</span>.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgd848f3e">
+<h2 id="orgd848f3e"><span class="section-number-2">6.</span> StatsBiol</h2>
+<p>
+ </p><div class="imgcontainer"><div about="./figures/CM-Lectures/SciSci/Statistics.png" typeof="schema:ImageObject schema:LearningResource dcmitype:StillImage" class="figure"><p><img data-src="./figures/CM-Lectures/SciSci/Statistics.png" alt="Network and Science Compexity" style="max-height:130vh" /></p><p property="schema:caption"></p></div></div><p>
+</p>
+
+</section>
+<section id="slide-orgb9b11fc">
+<h3 id="orgb9b11fc"><span class="section-number-3">6.1.</span> Descriptive Statistics</h3>
+<div style="font-size: 40%;">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Term</th>
+<th scope="col" class="org-left">Meaning</th>
+<th scope="col" class="org-left">Common Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Standard deviation</td>
+<td class="org-left">The typical difference between each value and the mean value.</td>
+<td class="org-left">Describing how broadly the sample values are distributed.  \[s.d.=\sqrt{\sum(X-\bar{X})^2/(N-1)}\]</td>
+</tr>
+
+<tr>
+<td class="org-left">Standard error of the mean (s.e.m)</td>
+<td class="org-left">An estimate how variable the means will be if the experiment is repeated multiple times.</td>
+<td class="org-left">Inferring where the population mean is likely to lie or whether set of samples are likely to come from the sample population.  \[s.e.m.=s.d./\sqrt{N}\]</td>
+</tr>
+
+<tr>
+<td class="org-left">Confidence Interval (CI:95%)</td>
+<td class="org-left">with 95% confidence, the population mean will lie in this interval.</td>
+<td class="org-left">Top interfere where the population mean lies, and to compare two populations \[CI=mean\pm s.e.m. \times t_{(N-1)}\]</td>
+</tr>
+
+<tr>
+<td class="org-left">Independent Data</td>
+<td class="org-left">Values from separate of the same type that are not linked</td>
+<td class="org-left">Testing hypothesis about population.</td>
+</tr>
+
+<tr>
+<td class="org-left">Replicate data</td>
+<td class="org-left">Values from experiment where everything is linked as much as possible.</td>
+<td class="org-left">Serves as an internal check on performance of an experiment.</td>
+</tr>
+
+<tr>
+<td class="org-left">Sampling error</td>
+<td class="org-left">Variation caused by sampling part of a population rather than measuring the whole population.</td>
+<td class="org-left">Can reveal bias in the data or problems with conduct of experiment. In binomial distributions the expected is \[\sqrt{Np(1-p)}\]; in Poisson the expected s.d. is \[\sqrt{mean}\]</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</section>
+<section id="slide-orgc091e59">
+<h3 id="orgc091e59"><span class="section-number-3">6.2.</span> Statistical Hypothesis Testing</h3>
+<ul>
+<li>Null hypothesis
+<ul>
+<li><b>Pearson’s correlation test</b> is that there is no <span style="color:green;">relationship between two variables</span>.</li>
+<li>The null hypothesis for the <b>Student’s t test</b> is that there is no <span style="color:green;">difference between the means of two populations</span>.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org4e9440e">
+<h3 id="org4e9440e"><span class="section-number-3">6.3.</span> p-value (p)</h3>
+<ul>
+<li>A <b>p-value</b>, which is the <b>probability of observing the result</b> given that the <span style="color:green;">null hypothesis is true</span>.
+<ul>
+<li><span style="color:blue;">not the reverse, as is often the case with misinterpretations</span>.</li>
+
+</ul></li>
+<li>\(p <= \alpha\): <b>reject \(H_0\)</b>, different distribution.</li>
+<li>\(p > \alpha\): <b>fail to reject \(H_0\)</b>, same distribution.</li>
+
+</ul>
+
+</section>
+<section id="slide-org6161aca">
+<h3 id="org6161aca"><span class="section-number-3">6.4.</span> Errors</h3>
+<ul>
+<li>There are <b>two types of errors</b>:</li>
+<li><b>Type I Error</b>. <span style="color:green;">Reject the null hypothesis when there is in fact no significant effect</span> <span style="color:yellow;">- false positive</span>.
+<ul>
+<li>The p-value is optimistically small.</li>
+
+</ul></li>
+<li><b>Type II Error</b>. <span style="color:green;">Not reject the null hypothesis when there is a significant effect</span> <span style="color:yellow;">-false negative</span>.
+<ul>
+<li>The p-value is pessimistically large.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org337d2a4">
+<h3 id="org337d2a4"><span class="section-number-3">6.5.</span> What Is Statistical Power?</h3>
+<ul>
+<li><span style="color:green;">Statistical power</span>, or the power of a hypothesis test is the <b>probability that the test correctly rejects the null hypothesis</b>.
+<ul>
+<li>Power = 1 - Type II Error</li>
+<li>Pr(True Positive) = 1 - Pr(False Negative)</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org337d2a4-split">
+<p>
+More intuitively, the <b>statistical power</b> can be thought of as the <b>probability of accepting an alternative hypothesis, when the alternative hypothesis is true</b>.
+</p>
+<ul>
+<li><b>Low Statistical Power</b>:
+<ul>
+<li>Large risk of committing Type II errors.</li>
+
+</ul></li>
+<li><b>High Statistical Power</b>:
+<ul>
+<li>Small risk of committing Type II errors.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-orge8ad97e">
+<h3 id="orge8ad97e"><span class="section-number-3">6.6.</span> Statistical Power</h3>
+<ul>
+<li>The <b>statistical power of a hypothesis test</b> is the <span style="color:green;">probability of detecting an effect, if there is a true effect present to detect</span>.</li>
+
+</ul>
+
+</section>
+<section id="slide-org3dbd7fc">
+<h3 id="org3dbd7fc"><span class="section-number-3">6.7.</span> Power Analysis</h3>
+<div class="column" style="float:left; font-size:70%; width:50%">
+<ul>
+<li class="fragment appear"><b>Effect Size</b>.
+<ul>
+<li>The quantified magnitude of a result present in the population.</li>
+<li>Effect size is calculated using a specific statistical measure, such as Pearson’s correlation coefficient for the relationship between variables.</li>
+
+</ul></li>
+<li class="fragment appear"><b>Sample Size</b>.
+<ul>
+<li>The number of observations in the sample.</li>
+
+</ul></li>
+
+</ul>
+</div>
+<div class="column" style="float:right; font-size:70%; width:50%">
+<ul>
+<li class="fragment appear"><b>Significance</b>.
+<ul>
+<li>The significance level used in the statistical test, e.g. alpha. Often set to 5% or 0.05.</li>
+
+</ul></li>
+<li class="fragment appear"><b>Statistical Power</b>.
+<ul>
+<li>The probability of accepting the alternative hypothesis if it is true.</li>
+
+</ul></li>
+
+</ul>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org55c51f8">
+<h2 id="org55c51f8"><span class="section-number-2">7.</span> Class Recap</h2>
+<ul>
+<li class="fragment appear">Motivations</li>
+<li class="fragment appear">The Power</li>
+<li class="fragment appear">Probability, Expectations &amp; Variance</li>
+<li class="fragment appear">Intervals, Testing &amp; p-Values</li>
+<li class="fragment appear">StatsBiol</li>
+<li class="fragment appear">Laboratory</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org408b36a">
+<h2 id="org408b36a"><span class="section-number-2">8.</span> Laboratory</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+]
+
+});
+
+</script>
+</body>
+</html>
